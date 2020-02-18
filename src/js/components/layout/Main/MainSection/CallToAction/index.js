@@ -1,0 +1,20 @@
+import React from 'react';
+
+const CallToAction = () =>{
+  return (
+    <div className="callToAction__wrapper">
+      <div className="callToAction__container">
+        <div className="callToAction__text">
+          <h3>Lorem ipsum dolor sit amet</h3>
+          <p>
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua.
+          </p>
+        </div>
+        <button>Lorem ipsum</button>
+      </div>
+    </div>
+  );
+};
+
+export default CallToAction;
