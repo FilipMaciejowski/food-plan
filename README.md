@@ -1,5 +1,7 @@
 # ScrumLab React
 
+llalalal
+
 To repozytorium jest poświęcone projektowi ScrumLab w wersji Reactowej. 
 
 
