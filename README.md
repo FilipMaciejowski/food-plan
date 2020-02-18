@@ -2,7 +2,7 @@
 
 To repozytorium jest poświęcone projektowi ScrumLab w wersji Reactowej.
 
-cokolwiek
+cośtam
 ## Jak zacząć?
 
 Aby rozpocząć pracę nad projektem, należy:
