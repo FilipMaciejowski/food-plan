@@ -1,8 +1,8 @@
 # ScrumLab React
 
-To repozytorium jest poświęcone projektowi ScrumLab w wersji Reactowej. 
+To repozytorium jest poświęcone projektowi ScrumLab w wersji Reactowej.
 
-
+cokolwiek
 ## Jak zacząć?
 
 Aby rozpocząć pracę nad projektem, należy:
@@ -45,7 +45,7 @@ Operacje które możemy wykonywać na bazie:
 | `/user` | `PATCH` | ` { "name": "Tomek" } ` | Zaktualizowanie obiektu `user` o nową wartość `name` |
 
 
-### Przepisy 
+### Przepisy
 ```json
 {
   "id": 1,
@@ -66,7 +66,7 @@ Operacje które możemy wykonywać na bazie:
 
 
 
-### Harmonogramy 
+### Harmonogramy
 ```json
 {
   "id": 1,
