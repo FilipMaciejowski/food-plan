@@ -293,8 +293,8 @@
 }
 
 .footer__text {
-  width: 33%;
-  flex-grow: 1;
+  
+  flex:1 1 33%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -314,8 +314,7 @@
   }
 }
 .footer__list {
-  flex-grow: 1;
-  width: 33%;
+  flex:1 1 33%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -340,8 +339,7 @@
 .footer__form-container {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  width: 33%;
+  flex:1 1 33%;
   height: auto;
   margin-right: $margin-main/2;
   align-items: flex-end;
