@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const CallToAction = () =>{
   return (
@@ -11,7 +12,9 @@ const CallToAction = () =>{
             labore et dolore magna aliqua.
           </p>
         </div>
-        <button>Lorem ipsum</button>
+        <Link className="button" to="/foodplan">
+          Lorem ipsum
+        </Link>
       </div>
     </div>
   );

@@ -162,7 +162,7 @@
     font-size: 1.25rem;
     color: $white2;
   }
-  button {
+.button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -172,6 +172,7 @@
     color: $white2;
     font-size: 1.5rem;
     border: none;
+    text-decoration: none;
   }
 }
 
@@ -293,8 +294,8 @@
 }
 
 .footer__text {
-  width: 33%;
-  flex-grow: 1;
+  
+  flex:1 1 33%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -314,8 +315,7 @@
   }
 }
 .footer__list {
-  flex-grow: 1;
-  width: 33%;
+  flex:1 1 33%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -340,8 +340,7 @@
 .footer__form-container {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  width: 33%;
+  flex:1 1 33%;
   height: auto;
   margin-right: $margin-main/2;
   align-items: flex-end;

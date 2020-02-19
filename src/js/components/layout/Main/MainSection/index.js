@@ -4,6 +4,8 @@ import AboutAuthor from './AboutAuthor';
 import CallToAction from './CallToAction';
 import NewsLetter from './NewsLetter';
 
+
+
 const MainSection = () =>{
   return (
     <>
