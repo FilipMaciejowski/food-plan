@@ -1,6 +1,11 @@
 # ScrumLab React
 
+
+To repozytorium jest poświęcone projektowi ScrumLab w wersji Reactowej. 
+
+
 To repozytorium jest poświęcone projektowi ScrumLab w wersji Reactowej.
+
 
 cośtam
 ## Jak zacząć?
