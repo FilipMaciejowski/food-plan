@@ -117,23 +117,152 @@
 }
 
 // DASHBOARD CONTENT
+
 .main__dashboard-content {
   background-image: url(".././assets/images/background.png");
   width: 81.5%;
-
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .dashboard__content-top {
-  width: 80%;
+  width: 90%;
   height: auto;
   margin: 0 auto;
   margin-top: 2.25%;
   display: flex;
+  justify-content: space-between;
+  
+}
+
+
+.dashboard__content-bottom {
+  
+  width: 100%;
+  height: auto;
+}
+
+
+// WIDGETSADD
+
+.widgets__container {
+  display: flex;
+  height: auto;
+  width: auto;
+  
+}
+
+.link__addrecipe {
+  width: 14rem;
+  display: flex;
+  height: 12.5rem;
+  background-color: $white1;
+  border: 1px dashed $widgetGreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-right: 5%;
+
+  
+
+  .widget__element__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-7.25%);
+    .widget__text {
+      
+      text-align: center;
+      p {
+        font-size: 1.25rem;
+        color: $widgetGreen;
+      }
+    }
+    .ng-element-plus {
+      cursor: pointer;
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+}
+
+// NOTIFICATIONS
+
+.notifications {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  width: 100%;
+  order: 2;
+}
+
+.notifications__element__1 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  border: 1px solid $notificationsBlue;
+  border-style: dashed;
+  display: flex;
+  
+
+  div p {
+    color: $notificationsBlue;
+    font-size: 1.25rem;
+  }
+}
+
+.notifications__element__2 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  border: 1px solid $notificationsYellow;
+  border-style: dashed;
+  display: flex;
+  
+  div p {
+    color: $notificationsYellow;
+    font-size: 1.25rem;
+  }
+}
+.notifications__element__3 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  border: 1px solid $notificationGreen;
+  border-style: dashed;
+  display: flex;
+
+  div p {
+    color: $notificationGreen;
+    font-size: 1.25rem;
+  }
+}
+.notification__element__text {
+  display: flex;
+  align-items: center;
+  p {
+    color: $notificationsBlue;
+    font-size: 1.25rem;
+  }
+}
+
+
+.ng-element {
+  cursor: pointer;
+  position: absolute;
+  top: 2px;
+  right: 3px;
 }
 
 
 // USER FIRST ENTRY
+
 .dashboard__user__first__entry-container{
 width: 100%;
 height: 100%;
@@ -197,119 +326,11 @@ align-items: center;
   }
 }
 }
-// WIDGETSADD
 
-.widgets__container {
-  display: flex;
-  height: auto;
-  width: 40%;
-  justify-content: space-between;
-}
-
-.widgets__element {
-  width: 45%;
-  display: flex;
-  height: auto;
-  background-color: $white1;
-  border: 1px dashed $widgetGreen;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  .widget__element__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transform: translateY(-7.25%);
-    .widget__text {
-      width: 100%;
-      text-align: center;
-      p {
-        font-size: 1.25rem;
-        color: $widgetGreen;
-      }
-    }
-    .ng-element-plus {
-      cursor: pointer;
-    }
-  }
-}
-
-// NOTIFICATIONS
-
-.notifications {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
-  height: auto;
-  width: 60%;
-  order: 2;
-}
-.notifications__element__1 {
-  position: relative;
-  width: 96.5%;
-  height: auto;
-  border: 1px solid $notificationsBlue;
-  border-style: dashed;
-  display: flex;
-
-  div p {
-    color: $notificationsBlue;
-    font-size: 1.25rem;
-  }
-}
-
-.notifications__element__2 {
-  position: relative;
-  width: 96.5%;
-  height: auto;
-  border: 1px solid $notificationsYellow;
-  border-style: dashed;
-  display: flex;
-
-  div p {
-    color: $notificationsYellow;
-    font-size: 1.25rem;
-  }
-}
-.notifications__element__3 {
-  position: relative;
-  width: 96.5%;
-  height: auto;
-  border: 1px solid $notificationGreen;
-  border-style: dashed;
-  display: flex;
-
-  div p {
-    color: $notificationGreen;
-    font-size: 1.25rem;
-  }
-}
-.notification__element__text {
-  display: flex;
-  align-items: center;
-  p {
-    color: $notificationsBlue;
-    font-size: 1.25rem;
-  }
-}
-.ng-element {
-  cursor: pointer;
-  position: absolute;
-  top: 2px;
-  right: 3px;
-}
 
 
 //ADD RECIPE MODAL
 
-
-
-
-  
   .add__recipe__modal{
   width: 75vw;
   height: 75vh;
