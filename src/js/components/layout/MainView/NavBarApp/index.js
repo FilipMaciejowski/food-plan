@@ -7,7 +7,9 @@ const NavBarApp = () => {
   useEffect(() => {
     dispatch(getUser());
   });
+
   const userName = useSelector(state => state.user);
+  
   return (
     <div className="navbar__dashboard-container">
       <div className="navbar__dashboard-content">
