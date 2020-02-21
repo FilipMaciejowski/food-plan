@@ -17,13 +17,13 @@
       "name": "Wegetariański tydzień",
       "description": "Długi opis tygodnia bez mięsa.",
       "weekNumber": 1,
-      "monday": [1,2,3,4,5],
-      "tuesday": [1,2,3,4,5],
-      "wednesday": [1,2,3,4,5],
-      "thrusday": [1,2,3,4,5],
-      "friday": [1,2,3,4,5],
-      "satruday": [1,2,3,4,5],
-      "sunday": [1,2,3,4,5]
+      "monday": [1, 2, 3, 4, 5],
+      "tuesday": [1, 2, 3, 4, 5],
+      "wednesday": [1, 2, 3, 4, 5],
+      "thrusday": [1, 2, 3, 4, 5],
+      "friday": [1, 2, 3, 4, 5],
+      "satruday": [1, 2, 3, 4, 5],
+      "sunday": [1, 2, 3, 4, 5]
     }
   ]
 }

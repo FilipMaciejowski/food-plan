@@ -128,7 +128,6 @@
   width: 81.5%;
 }
 
-
 .dashboard__content-top{
   width: 90%;
   height: 30%;
@@ -155,25 +154,31 @@
     font-weight: bold;
     font-size: 1.5rem;
   }
-  input {
-    padding: 0 0.6rem;
-    width: 18.25rem;
-    height: 1.875rem;
-    border: none;
-    border: 0.0625rem solid $grey4;
-  }
-  button {
+  form {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: none;
-    width: 8rem;
-    height: 2.5rem;
-    background-color: $orange3;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: $white1;
+
+    input {
+      padding: 0 0.6rem;
+      margin-bottom: 1rem;
+      width: 18.25rem;
+      height: 1.875rem;
+      border: none;
+      border: 0.0625rem solid $grey4;
+    }
+    button {
+      border: none;
+      width: 8rem;
+      height: 2.5rem;
+      background-color: $orange3;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: $white1;
+    }
   }
+
   p:nth-of-type(2) {
     font-weight: bold;
     font-size: 1.25rem;
@@ -287,4 +292,3 @@
   top: 2px;
   right:3px;
 }
-
