@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { updateUser } from "../../../../../../redux/actions/user";
 
 const UserFirstEntry = () => {
-  const [name, setName] = useState("fff");
+  const [name, setName] = useState("");
   const dispatch = useDispatch();
 
   const handleSubmit = e => {
