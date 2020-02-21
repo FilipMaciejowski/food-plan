@@ -1,11 +1,11 @@
-import { createStore, combineReducers, applyMiddlewre, compose } from 'redux';
+import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 
-const roortReducer = combineReducers({user, recipe, schedule});
+const rootReducer = combineReducers({user, recipe, schedule});
 
 
 
-const store = createStore(rootReducer, compose(applyMiddelware(thunk)));
+const store = createStore(rootReducer, compose(applyMiddleware(thunk)));
 
 
 

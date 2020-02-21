@@ -5,17 +5,15 @@ import DashboardContent from "./DashboardContent";
 
 
 const Dashboard = () =>{
-
-const userName= "fff"; 
-
+const userName= "ggg"; 
 if(userName === ""){
   return <UserFirstEntry />
 }
 
   return(
-    <div>
+    <>
       <DashboardContent />
-    </div>
+    </>
   );
 };
 
