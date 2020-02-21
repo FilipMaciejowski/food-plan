@@ -18,9 +18,15 @@ const AddRecipe = () => {
       </div>
       <div className="modal__input">
         <form onSubmit={()=>onSumbit}>
+          <label>
+            name
+          <input type="text" value="Submit"/>
+          </label>
+          <label>
+            description
+          <input type="text" value="Submit"/>
+          </label>
 
-          <textarea></textarea>
-          <textare></textare>
         </form>
       </div>
     </div>

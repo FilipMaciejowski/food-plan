@@ -15,7 +15,7 @@ const UserFirstEntry = () => {
     }
   };
   return (
-    <div className="dashboard__user__first-entry-container">
+    <div className="dashboard__user__first__entry-container">
       <div className="dashboard__user__first-entry">
         <h1>Witaj,</h1>
         <p>wygląda na to że jesteś tutaj pierwszy raz!</p>
