@@ -133,12 +133,12 @@
   margin-top: 2.25%;
   display: flex;
   justify-content: space-between;
-  border: 1px solid red; 
+  
 }
 
 
 .dashboard__content-bottom {
-  border: 1px solid red;
+  
   width: 100%;
   height: auto;
 }
@@ -150,7 +150,7 @@
   display: flex;
   height: auto;
   width: auto;
-  border: 1px solid green;
+  
 }
 
 .link__addrecipe {
@@ -200,8 +200,6 @@
   height: auto;
   width: 100%;
   order: 2;
-  border: 1px solid blue;
-  
 }
 
 .notifications__element__1 {
