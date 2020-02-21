@@ -5,7 +5,7 @@ import Notifications from './Notifications';
 
 const DashboardContent = () => {
   return (
-    <div>
+    <div className="dashboard__content-top">
       <Notifications />
       <WidgetsAdd />
     </div>

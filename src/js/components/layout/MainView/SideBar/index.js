@@ -6,17 +6,17 @@ const SideBar = () => {
     <nav className="sidebar__nav-container">
       <ul className="sidebar-content">
         <li className="sidebar__item">
-          <NavLink to="/foodplan/dashboard" activeClassName="active">
+          <NavLink to="/foodplan/dashboard" >
             Dashboard
           </NavLink>
         </li>
         <li className="sidebar__item">
-          <NavLink to="/foodplan/recipes" activeClassName="active">
+          <NavLink to="/foodplan/recipes" >
             Recipes
           </NavLink>
         </li>
         <li className="sidebar__item">
-          <NavLink to="/foodplan/schedules" activeClassName="active">
+          <NavLink to="/foodplan/schedules" >
             Schedules
           </NavLink>
         </li>

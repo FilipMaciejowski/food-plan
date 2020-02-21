@@ -1,64 +1,145 @@
+// DASHBOARD
+
+.main__dashboard {
+  width: 100vw;
+  height: 100vh;
+}
+
+// NAVBAR
 .navbar__dashboard-container {
   background-color: $grey2;
-  padding: 1.5rem;
-  height: 15vh;
+  padding: 0.5rem 2rem;
+  height: auto;
   .navbar__dashboard-content {
     width: 100%;
     max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    h1 {
-      font-family: $logo-font;
-      color: $white1;
-      span {
-        color: $orange3;
+    border-left: 5px solid $grey2;
+    border-right: 5px solid $grey2;
+    a {
+      display: inline-block;
+      text-decoration: none;
+      display: flex;
+      width: auto;
+      height: auto;
+      border-right: 1px solid $grey1;
+
+      h1{
+      width: auto;
+      height: 1.75rem;
+      padding-right: 1.5rem;
+      
+      }
+      .navbar__title {
+        font-family: $logo-font;
+        font-weight: lighter;
+        font-size: 2rem;
+        color: $white2;
+        .navbar__alttitle {
+          color: $orange2;
+          margin-left: 0.5rem;
+        }
       }
     }
     .avatar__container {
+      display: flex;
+      align-items: center;
       .avatar__name {
         color: $white1;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
+        margin-right: 1.75rem;
+      }
+      .avatar__image {
+        z-index: 3;
+        width: 2.5rem;
+        height: 2.5rem;
       }
     }
   }
 }
 
+// DASHBOARD
+.main__dashboard-container {
+  width: 100%;
+  height: 85%;
+  display: flex;
+}
+
+//SIDEBAR
 .sidebar__nav-container {
   display: flex;
+  width: 18.5%;
+  height: 100%;
+  background-color: $grey1;
 
   .sidebar-content {
-    height: 85vh;
-    flex: 1 1 35%;
-    background-color: $grey1;
-    padding-left: 1.5rem;
+    height: 100%;
+    width: 100%;
+    position: relative;
     list-style: none;
-    .sidebar__item {
-      width: 100%;
-      height: 12.5%;
-      margin-right: 2rem;
-      display: flex;
-      align-items: center;
-
-      a {
-        margin-top: 2.5rem;
+    
+      a{
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        padding-left: 2rem;
+        padding-top: 2.25rem;
+        padding-bottom: 2.25rem;
         text-decoration: none;
-        color: $white1;
         font-size: 1.5rem;
         font-family: $main-font;
-        text-decoration: none;
-        font-weight: 300;
+        font-weight: 100;
+        color: $white1;
+        font-size: 1.25rem;
+        font-family: $main-font;
+        border-left: 5px solid $grey1;
+        position: relative;
+        
       }
+
       .active {
-        color: $orange3;
+        color: $white2;
+        font-weight: 900;
+        border-left: 5px solid $orange3;
+  
       }
+
+       .active::after {
+          content: "";
+          position: absolute; 
+          border: solid $orange3;
+          border-width: 0 2px 2px 0;
+          padding: 4px;
+          top: 50%;
+          left: 85%;
+          transform: translateY(-50%) rotate(-45deg); 
+          
+        }
     }
   }
+
+
+
+// DASHBOARD CONTENT
+.main__dashboard-content {
+  background-image: url(".././assets/images/background.png");
+  width: 81.5%;
+}
+
+.dashboard__content-top{
+  width: 90%;
+  height: 30%;
+  margin: 0 auto;
+  margin-top: 2.25%;
+  display: flex;
+  justify-content: space-between;
+ 
 }
 
 // USER FIRST ENTRY
-
-.dashboard__user__first-entry {
+.dashboard__user__first__entry {
   height: 20rem;
   display: flex;
   flex-direction: column;
@@ -106,35 +187,31 @@
 
 // WIDGETSADD
 
-.buttons_-container {
-  height: 200px;
-  border: 1px solid black;
+.widgets__container {
   display: flex;
-}
-.widgets_-container {
-  height: 200px;
+  height: auto;
   width: 40%;
-  border: 1px solid black;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
 }
-.notifications {
-  height: 200px;
-  width: 60%;
-  border: 1px solid black;
-}
+
 .widgets__element {
-  width: 198px;
-  height: 177px;
+  width: 45%;
+  display: flex;
+  
+  height: auto;
   background-color: $white1;
-  border: 1px solid black;
-  border-style: dashed;
+  border: 1px dashed $widgetGreen;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
+  .widget__element__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-7.25%);
   .widget__text {
     width: 100%;
     text-align: center;
@@ -143,6 +220,10 @@
       color: $widgetGreen;
     }
   }
+  .ng-element-plus{
+    cursor: pointer;
+  }
+}
 }
 
 // NOTIFICATIONS
@@ -150,32 +231,48 @@
 .notifications {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: auto;
+  width: 60%;
+  order: 2;
 }
 .notifications__element__1 {
-  width: 633px;
-  height: 51px;
+  position: relative;
+  width: 96.5%;
+  height: auto;
   border: 1px solid $notificationsBlue;
   border-style: dashed;
   display: flex;
+  
+  div p {
+    color: $notificationsBlue;
+    font-size: 1.25rem;
+  }
 }
+
+
 .notifications__element__2 {
-  width: 633px;
-  height: 51px;
+  position: relative;
+  width: 96.5%;
+  height: auto;
   border: 1px solid $notificationsYellow;
   border-style: dashed;
   display: flex;
+  
   div p {
     color: $notificationsYellow;
     font-size: 1.25rem;
   }
 }
 .notifications__element__3 {
-  width: 633px;
-  height: 51px;
+  position: relative;
+  width: 96.5%;
+  height: auto;
   border: 1px solid $notificationGreen;
   border-style: dashed;
   display: flex;
+  
   div p {
     color: $notificationGreen;
     font-size: 1.25rem;
@@ -191,10 +288,7 @@
 }
 .ng-element {
   cursor: pointer;
-}
-
-.main__dashboard-container {
-  display: flex;
-  flex: 2 2 65%;
-  width: auto;
+  position: absolute;
+  top: 2px;
+  right:3px;
 }

@@ -8,9 +8,8 @@ const Notifications = () => {
         <div className="notifications__element__1">
           <svg
             version="1.2"
-            preserveAspectRatio="none"
             viewBox="0 0 24 24"
-            className="ng-element"
+            className="ng-element-sign"
             dataId="82b9319a6a184988b6f1bbc1c91c5f57"
             style={{
               opacity: 1,
@@ -36,7 +35,6 @@ const Notifications = () => {
             preserveAspectRatio="none"
             viewBox="0 0 24 24"
             className="ng-element"
-            
             dataId="869fd61eedf54e3caadb44d6bc83e8fd"
             style={{
               opacity: 1,
@@ -44,7 +42,6 @@ const Notifications = () => {
               fill: "rgb(52, 152, 219)",
               width: "25px",
               height: "25px",
-              transform: "rotate(0deg) translate(283px, 2px)"
             }}
           >
             <g>
@@ -60,9 +57,9 @@ const Notifications = () => {
         <div className="notifications__element__2">
           <svg
             version="1.2"
-            preserveAspectRatio="none"
+            
             viewBox="0 0 24 24"
-            className="ng-element"
+            className="ng-element-sign"
             dataId="6da813db9f044a9d8b8159fbf4b56868"
             style={{
               opacity: 1,
@@ -88,15 +85,15 @@ const Notifications = () => {
             preserveAspectRatio="none"
             viewBox="0 0 24 24"
             className="ng-element"
-            
             dataId="869fd61eedf54e3caadb44d6bc83e8fd"
             style={{
+              position:"absolute",
               opacity: 1,
               mixBlendMode: "normal",
               fill: "rgb(255, 176, 59)",
               width: "25px",
               height: "25px",
-              transform: "rotate(0deg) translate(322px, 2px)"
+              
             }}
           >
             <g>
@@ -111,9 +108,8 @@ const Notifications = () => {
         <div className="notifications__element__3">
           <svg
             version="1.2"
-            preserveAspectRatio="none"
             viewBox="0 0 24 24"
-            className="ng-element"
+            className="ng-element-sign"
             dataId="022945693c33479f88e36e308156bed0"
             style={{
               opacity: 1,
@@ -146,7 +142,6 @@ const Notifications = () => {
               fill: "rgb(70, 137, 102)",
               width: "25px",
               height: "25px",
-              transform: "rotate(0deg) translate(56px, 2px)"
             }}
           >
             <g>
