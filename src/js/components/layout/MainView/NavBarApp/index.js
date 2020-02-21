@@ -1,17 +1,17 @@
-import React from "react";
-import { Link } from "react-router-dom";
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 
 import { getUser } from "../../../../../redux/actions/user";
 
 const NavBarApp = () => {
-  const userName = useSelector(state => state.user);
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(getUser());
   });
+
+  const userName = useSelector(state => state.user);
 
   return (
     <div className="navbar__dashboard-container">
@@ -23,7 +23,7 @@ const NavBarApp = () => {
           </h1>
         </Link>
         <div className="avatar__container">
-          <span className="avatar__name">Name</span>
+          <span className="avatar__name">{userName}</span>
           <svg
             className="avatar__image"
             viewBox="0 0 385 385"

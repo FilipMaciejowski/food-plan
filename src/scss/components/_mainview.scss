@@ -26,11 +26,10 @@
       height: auto;
       border-right: 1px solid $grey1;
 
-      h1{
-      width: auto;
-      height: 1.75rem;
-      padding-right: 1.5rem;
-      
+      h1 {
+        width: auto;
+        height: 1.75rem;
+        padding-right: 1.5rem;
       }
       .navbar__title {
         font-family: $logo-font;
@@ -79,48 +78,43 @@
     width: 100%;
     position: relative;
     list-style: none;
-    
-      a{
-        display: inline-block;
-        width: 100%;
-        height: auto;
-        padding-left: 2rem;
-        padding-top: 2.25rem;
-        padding-bottom: 2.25rem;
-        text-decoration: none;
-        font-size: 1.5rem;
-        font-family: $main-font;
-        font-weight: 100;
-        color: $white1;
-        font-size: 1.25rem;
-        font-family: $main-font;
-        border-left: 5px solid $grey1;
-        position: relative;
-        
-      }
 
-      .active {
-        color: $white2;
-        font-weight: 900;
-        border-left: 5px solid $orange3;
-  
-      }
+    a {
+      display: inline-block;
+      width: 100%;
+      height: auto;
+      padding-left: 2rem;
+      padding-top: 2.25rem;
+      padding-bottom: 2.25rem;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-family: $main-font;
+      font-weight: 100;
+      color: $white1;
+      font-size: 1.25rem;
+      font-family: $main-font;
+      border-left: 5px solid $grey1;
+      position: relative;
+    }
 
-       .active::after {
-          content: "";
-          position: absolute; 
-          border: solid $orange3;
-          border-width: 0 2px 2px 0;
-          padding: 4px;
-          top: 50%;
-          left: 85%;
-          transform: translateY(-50%) rotate(-45deg); 
-          
-        }
+    .active {
+      color: $white2;
+      font-weight: 900;
+      border-left: 5px solid $orange3;
+    }
+
+    .active::after {
+      content: "";
+      position: absolute;
+      border: solid $orange3;
+      border-width: 0 2px 2px 0;
+      padding: 4px;
+      top: 50%;
+      left: 85%;
+      transform: translateY(-50%) rotate(-45deg);
     }
   }
-
-
+}
 
 // DASHBOARD CONTENT
 .main__dashboard-content {
@@ -128,18 +122,17 @@
   width: 81.5%;
 }
 
-.dashboard__content-top{
+.dashboard__content-top {
   width: 90%;
   height: 30%;
   margin: 0 auto;
   margin-top: 2.25%;
   display: flex;
   justify-content: space-between;
- 
 }
 
 // USER FIRST ENTRY
-.dashboard__user__first__entry {
+.dashboard__user__first-entry {
   height: 20rem;
   display: flex;
   flex-direction: column;
@@ -197,7 +190,7 @@
 .widgets__element {
   width: 45%;
   display: flex;
-  
+
   height: auto;
   background-color: $white1;
   border: 1px dashed $widgetGreen;
@@ -206,24 +199,24 @@
   align-items: center;
   justify-content: center;
 
-  .widget__element__container{
+  .widget__element__container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transform: translateY(-7.25%);
-  .widget__text {
-    width: 100%;
-    text-align: center;
-    p {
-      font-size: 1.25rem;
-      color: $widgetGreen;
+    .widget__text {
+      width: 100%;
+      text-align: center;
+      p {
+        font-size: 1.25rem;
+        color: $widgetGreen;
+      }
+    }
+    .ng-element-plus {
+      cursor: pointer;
     }
   }
-  .ng-element-plus{
-    cursor: pointer;
-  }
-}
 }
 
 // NOTIFICATIONS
@@ -244,13 +237,12 @@
   border: 1px solid $notificationsBlue;
   border-style: dashed;
   display: flex;
-  
+
   div p {
     color: $notificationsBlue;
     font-size: 1.25rem;
   }
 }
-
 
 .notifications__element__2 {
   position: relative;
@@ -259,7 +251,7 @@
   border: 1px solid $notificationsYellow;
   border-style: dashed;
   display: flex;
-  
+
   div p {
     color: $notificationsYellow;
     font-size: 1.25rem;
@@ -272,7 +264,7 @@
   border: 1px solid $notificationGreen;
   border-style: dashed;
   display: flex;
-  
+
   div p {
     color: $notificationGreen;
     font-size: 1.25rem;
@@ -290,5 +282,5 @@
   cursor: pointer;
   position: absolute;
   top: 2px;
-  right:3px;
+  right: 3px;
 }

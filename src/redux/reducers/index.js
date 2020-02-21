@@ -1,11 +1,11 @@
 import { combineReducers } from "redux";
 
 import user from "./user";
-import recipe from "./recipe";
-import schedule from "./schedule";
+import recipes from "./recipes";
+import schedules from "./schedules";
 
 export default combineReducers({
   user,
-  recipe,
-  schedule
+  recipes,
+  schedules
 });
