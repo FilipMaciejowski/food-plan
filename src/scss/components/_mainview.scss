@@ -173,7 +173,12 @@ align-items: center;
       height: 1.875rem;
       border: none;
       border: 0.0625rem solid $grey4;
+      color: darken($grey2, 20%);
+      &::placeholder{
+        color: lighten($grey3, 15%);
+      }
     }
+
     button {
       border: none;
       width: 8rem;
@@ -204,7 +209,6 @@ align-items: center;
 .widgets__element {
   width: 45%;
   display: flex;
-
   height: auto;
   background-color: $white1;
   border: 1px dashed $widgetGreen;
@@ -297,4 +301,16 @@ align-items: center;
   position: absolute;
   top: 2px;
   right: 3px;
+}
+
+
+//ADD RECIPE MODAL
+
+
+
+
+  
+  .add__recipe__modal{
+  width: 75vw;
+  height: 75vh;
 }

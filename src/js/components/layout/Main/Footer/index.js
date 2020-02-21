@@ -42,7 +42,7 @@ const Footer = () => {
                   version="1.2"
                   preserveAspectRatio="none"
                   viewBox="0 0 24 24"
-                  className="ng-element"
+                  className="ng-element-footer"
                   dataId="353a1cf2cd034e9bb8551062ede29aab"
                   style={{
                     opacity: 1,
@@ -64,7 +64,7 @@ const Footer = () => {
                   version="1.2"
                   preserveAspectRatio="none"
                   viewBox="0 0 24 24"
-                  className="ng-element"
+                  className="ng-element-footer"
                   dataId="353a1cf2cd034e9bb8551062ede29aab"
                   style={{
                     opacity: 1,
