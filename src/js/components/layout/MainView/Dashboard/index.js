@@ -8,7 +8,7 @@ const Dashboard = () => {
   const userName = useSelector(state => state.user);
 
   return (
-    <div>{userName === "" ? <UserFirstEntry /> : <DashboardContent />}</div>
+    <>{userName === "" ? <UserFirstEntry /> : <DashboardContent />}</>
   );
 };
 

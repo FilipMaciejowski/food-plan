@@ -1,18 +1,15 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-
 import { getUser } from "../../../../../redux/actions/user";
-
 const NavBarApp = () => {
   const dispatch = useDispatch();
-
   useEffect(() => {
     dispatch(getUser());
   });
 
   const userName = useSelector(state => state.user);
-
+  
   return (
     <div className="navbar__dashboard-container">
       <div className="navbar__dashboard-content">
@@ -56,5 +53,4 @@ const NavBarApp = () => {
     </div>
   );
 };
-
 export default NavBarApp;
