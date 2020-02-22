@@ -121,6 +121,9 @@
 .main__dashboard-content {
   background-image: url(".././assets/images/background.png");
   width: 81.5%;
+}
+
+.dashboard__content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -250,6 +253,100 @@
   right: 3px;
 }
 
+// SCHEDULE OVERVIEW
+.dashboard__content-bottom {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 2.25%;
+  background-color: #fffffa;
+  border: 1px dashed #468966;
+
+  .schedule__overview-title {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.25rem;
+    color: $orange3;
+  }
+
+  .schedule__overview-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .schedule__overview-content-day {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2rem;
+
+      .schedule__overview-content-element-title {
+        width: 12rem;
+        margin-top: 1rem;
+        padding: 0.75rem 0;
+        border-top: 0.0625rem solid $grey3;
+        border-bottom: 0.0625rem solid $grey3;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        color: $grey2;
+      }
+      .schedule__overview-content-element {
+        text-align: center;
+        padding: 0.75rem 0;
+        font-size: 1.25rem;
+        color: $grey3;
+        border-bottom: 0.0625rem solid $grey3;
+      }
+    }
+  }
+}
+
+.schedule__overview-content-nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 1rem;
+
+  .schedule__overview-content-nav-element {
+    display: flex;
+    font-size: 0.875rem;
+    color: $orange3;
+  }
+
+  .prev {
+    margin-left: 1rem;
+
+    span:nth-of-type(1) {
+      align-self: center;
+      font-size: 2rem;
+      margin-right: 0.5rem;
+    }
+
+    span:nth-of-type(2) {
+      align-self: center;
+    }
+  }
+
+  .next {
+    margin-right: 1rem;
+
+    span:nth-of-type(1) {
+      align-self: center;
+      margin-right: 0.5rem;
+    }
+
+    span:nth-of-type(2) {
+      font-size: 2rem;
+    }
+  }
+}
+
+//ADD RECIPE MODAL
+
+.add__recipe__modal {
+  width: 75vw;
+  height: 75vh;
+}
 // USER FIRST ENTRY
 
 .dashboard__user__first__entry-container {

@@ -1,7 +1,101 @@
 import React from "react";
 
 const ScheduleOverview = () => {
-  return <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, repellat quasi quisquam fugiat voluptatem nostrum quas fugit quia beatae omnis sapiente, esse, dicta nam magni veniam. Cum exercitationem architecto maiores non excepturi nam in quibusdam obcaecati minus ipsa, corrupti itaque sequi cupiditate sapiente fugiat debitis blanditiis dicta distinctio vero quidem aperiam laborum! Alias impedit, perferendis asperiores accusantium nulla aperiam minus dolores neque illo ea est quaerat quidem ab numquam vitae sequi? Dolorem obcaecati nesciunt fuga repellat aut odio amet cupiditate assumenda voluptates fugit error numquam nihil, consequuntur doloremque, vitae cumque id in sit unde earum. Ad fugit cum harum possimus delectus placeat, maiores neque? Mollitia cum, sit numquam officiis temporibus distinctio ipsam? Ducimus, hic ratione! Eum dignissimos optio repellat dolores laboriosam, libero voluptas praesentium excepturi exercitationem aperiam ratione, necessitatibus tempore, molestias possimus! Exercitationem quidem autem fugit rerum corrupti ducimus error atque sequi accusamus, et eos. Accusamus, alias odio. Tenetur laudantium a soluta possimus aspernatur ex voluptates. Accusantium iusto voluptatum dolores ex eveniet? In magnam necessitatibus perferendis, rerum porro ipsum laborum eos beatae sed magni quo saepe corporis laboriosam. Ipsum pariatur impedit blanditiis animi inventore ut saepe perspiciatis et. Soluta consequatur quibusdam temporibus nesciunt ab possimus magni corporis maxime, dolore itaque quo debitis alias autem a voluptate enim ut. Omnis fuga magnam magni, modi natus assumenda ipsum porro totam harum perferendis ex incidunt ab ullam possimus, eius doloribus amet. Incidunt saepe tempora illum sunt labore ut ipsa nesciunt voluptates. Eveniet, eaque pariatur. Corporis quasi minus nulla neque, dolores at blanditiis. Eveniet!</div>;
+  return (
+    <>
+      <div className="schedule__overview-title">
+        Twój plan na nr_tygodnia tydzień:
+      </div>
+      <div className="schedule__overview-content-container">
+        <div className="schedule__overview-content-day">
+          <div className="schedule__overview-content-element-title">
+            Poniedziałek
+          </div>
+          <div className="schedule__overview-content-element">sniadanie</div>
+          <div className="schedule__overview-content-element">
+            drugie sniadanie
+          </div>
+          <div className="schedule__overview-content-element">zupa</div>
+          <div className="schedule__overview-content-element">drugie danie</div>
+          <div className="schedule__overview-content-element">kolacja</div>
+        </div>
+        <div className="schedule__overview-content-day">
+          <div className="schedule__overview-content-element-title">Wtorek</div>
+          <div className="schedule__overview-content-element">sniadanie</div>
+          <div className="schedule__overview-content-element">
+            drugie sniadanie
+          </div>
+          <div className="schedule__overview-content-element">zupa</div>
+          <div className="schedule__overview-content-element">drugie danie</div>
+          <div className="schedule__overview-content-element">kolacja</div>
+        </div>
+        <div className="schedule__overview-content-day">
+          <div className="schedule__overview-content-element-title">Środa</div>
+          <div className="schedule__overview-content-element">sniadanie</div>
+          <div className="schedule__overview-content-element">
+            drugie sniadanie
+          </div>
+          <div className="schedule__overview-content-element">zupa</div>
+          <div className="schedule__overview-content-element">drugie danie</div>
+          <div className="schedule__overview-content-element">kolacja</div>
+        </div>
+        <div className="schedule__overview-content-day">
+          <div className="schedule__overview-content-element-title">
+            Czwartek
+          </div>
+          <div className="schedule__overview-content-element">sniadanie</div>
+          <div className="schedule__overview-content-element">
+            drugie sniadanie
+          </div>
+          <div className="schedule__overview-content-element">zupa</div>
+          <div className="schedule__overview-content-element">drugie danie</div>
+          <div className="schedule__overview-content-element">kolacja</div>
+        </div>
+        <div className="schedule__overview-content-day">
+          <div className="schedule__overview-content-element-title">Piątek</div>
+          <div className="schedule__overview-content-element">sniadanie</div>
+          <div className="schedule__overview-content-element">
+            drugie sniadanie
+          </div>
+          <div className="schedule__overview-content-element">zupa</div>
+          <div className="schedule__overview-content-element">drugie danie</div>
+          <div className="schedule__overview-content-element">kolacja</div>
+        </div>
+        <div className="schedule__overview-content-day">
+          <div className="schedule__overview-content-element-title">Sobota</div>
+          <div className="schedule__overview-content-element">sniadanie</div>
+          <div className="schedule__overview-content-element">
+            drugie sniadanie
+          </div>
+          <div className="schedule__overview-content-element">zupa</div>
+          <div className="schedule__overview-content-element">drugie danie</div>
+          <div className="schedule__overview-content-element">kolacja</div>
+        </div>
+        <div className="schedule__overview-content-day">
+          <div className="schedule__overview-content-element-title">
+            Niedziela
+          </div>
+          <div className="schedule__overview-content-element">sniadanie</div>
+          <div className="schedule__overview-content-element">
+            drugie sniadanie
+          </div>
+          <div className="schedule__overview-content-element">zupa</div>
+          <div className="schedule__overview-content-element">drugie danie</div>
+          <div className="schedule__overview-content-element">kolacja</div>
+        </div>
+      </div>
+      <div className="schedule__overview-content-nav">
+        <div className="schedule__overview-content-nav-element prev">
+          <span>&laquo;</span>
+          <span>poprzedni</span>
+        </div>
+        <div className="schedule__overview-content-nav-element next">
+          <span>następny</span>
+          <span>&raquo;</span>
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default ScheduleOverview;
