@@ -9,7 +9,9 @@ const DashboardContent = () => {
     <div className="dashboard__content-top">
       <Notifications />
       <WidgetsAdd />
-      <ScheduleOverview />
+      <div className="dashboard__content-bottom">
+        <ScheduleOverview />
+      </div>
     </div>
   );
 };

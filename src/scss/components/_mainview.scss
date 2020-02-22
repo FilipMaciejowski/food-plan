@@ -120,38 +120,51 @@
 .main__dashboard-content {
   background-image: url(".././assets/images/background.png");
   width: 81.5%;
+
+  
 }
 
 .dashboard__content-top {
-  width: 90%;
-  height: 30%;
+  width: 80%;
+  height: auto;
   margin: 0 auto;
   margin-top: 2.25%;
   display: flex;
-  justify-content: space-between;
 }
 
+
 // USER FIRST ENTRY
+.dashboard__user__first__entry-container{
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+
 .dashboard__user__first-entry {
-  height: 20rem;
+  height: 85%;
+  width: 90%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   background-color: $white1;
   color: $grey1;
+
   h1 {
-    font-size: 3.36rem;
+    font-size: 3rem;
+    margin-bottom:1rem;
   }
   p:first-of-type {
     font-weight: bold;
     font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
   form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1.5rem;
 
     input {
       padding: 0 0.6rem;
@@ -160,7 +173,12 @@
       height: 1.875rem;
       border: none;
       border: 0.0625rem solid $grey4;
+      color: darken($grey2, 20%);
+      &::placeholder{
+        color: lighten($grey3, 15%);
+      }
     }
+
     button {
       border: none;
       width: 8rem;
@@ -172,12 +190,13 @@
     }
   }
 
+
   p:nth-of-type(2) {
     font-weight: bold;
     font-size: 1.25rem;
   }
 }
-
+}
 // WIDGETSADD
 
 .widgets__container {
@@ -190,7 +209,6 @@
 .widgets__element {
   width: 45%;
   display: flex;
-
   height: auto;
   background-color: $white1;
   border: 1px dashed $widgetGreen;
@@ -283,4 +301,16 @@
   position: absolute;
   top: 2px;
   right: 3px;
+}
+
+
+//ADD RECIPE MODAL
+
+
+
+
+  
+  .add__recipe__modal{
+  width: 75vw;
+  height: 75vh;
 }

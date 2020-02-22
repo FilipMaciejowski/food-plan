@@ -12,7 +12,7 @@ const CallToAction = () =>{
             labore et dolore magna aliqua.
           </p>
         </div>
-        <Link className="button" to="/foodplan">
+        <Link className="button" to="/foodplan/dashboard">
           Lorem ipsum
         </Link>
       </div>

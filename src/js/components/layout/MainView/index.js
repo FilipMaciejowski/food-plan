@@ -5,6 +5,7 @@ import SideBar from "./SideBar";
 import Schedules from "./Schedules";
 import Dashboard from "./Dashboard";
 import Recipes from "./Recipes";
+import AddRecipe from "./Dashboard/AddRecipe";
 
 const MainView = () => {
   return (
@@ -14,9 +15,10 @@ const MainView = () => {
         <SideBar />
         <div className="main__dashboard-content">
           <Switch>
-            <Route path="/foodplan/dashboard" component={Dashboard} />
-            <Route path="/foodplan/recipes" component={Recipes} />
-            <Route path="/foodplan/schedules" component={Schedules} />
+            <Route exact path="/foodplan/dashboard" component={Dashboard} />
+            <Route exact path="/foodplan/recipes" component={Recipes} />
+            <Route exact path="/foodplan/recipes/add" component={AddRecipe} />
+            <Route exact path="/foodplan/schedules" component={Schedules} />
           </Switch>
         </div>
       </div>
