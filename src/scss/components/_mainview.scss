@@ -151,7 +151,7 @@
   width: auto;
 }
 
-.link__addrecipe {
+.link__add {
   width: 14rem;
   display: flex;
   height: 12.5rem;
@@ -539,7 +539,6 @@
     }
   }
 }
-
 .add__recipe__content-list {
   ul {
     counter-reset: item;
@@ -553,4 +552,116 @@
       counter-increment: item;
     }
   }
+}
+
+//ADD SCHEDULE
+
+.add__schedule__container {
+  width: 100%;
+  height: 100%;
+  background-color: $white1;
+  padding: 2rem 2rem;
+}
+
+.add__schedule__header {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid $grey3;
+  padding-bottom: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  h1 {
+    text-transform: uppercase;
+    color: $orange3;
+    font-family: $main-font;
+    font-weight: 900;
+    font-size: 1.75rem;
+    margin: 0 0;
+  }
+  button {
+    background-color: $orange3;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border: none;
+    color: $white2;
+    font-size: 1rem;
+    font-family: $main-font;
+  }
+}
+
+.add__schedule__input {
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      font-size: 1.25rem;
+      color: $grey1;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      margin-right: 5rem;
+
+      .schedule__name-input,
+      textarea {
+        width: 75%;
+        height: auto;
+        color: darken($grey2, 20%);
+        font-size: 0.75rem;
+        font-family: $main-font;
+        padding: 0.25rem;
+        border: 1px solid lighten($grey3, 15%);
+        &::placeholder {
+          color: lighten($grey3, 15%);
+        }
+        textarea.schedule__name-description {
+          height: auto;
+          font-family: $main-font;
+        }
+      }
+    }
+    .schedule__week-input-container{
+      width: 75%;
+    .schedule__week-input {
+      display: flex;
+      justify-content: space-between;
+      width: 3%;
+      height: auto;
+      color: darken($grey2, 20%);
+      font-size: 0.75rem;
+      font-family: $main-font;
+      padding: 0.25rem;
+      border: 1px solid lighten($grey3, 15%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  }
+}
+
+.add__schedule-table{
+  width: 100%;
+  height: auto;
+  
+  .add__schedule-table-row{
+    width: 100%;
+    height: 2.25rem;
+  }
+  
+}
+table, th  {
+  border: 1px solid black;
+  text-transform: uppercase; 
+}
+td{
+  border: 1px solid black;
+  text-transform: uppercase; 
+}
+
+.add__schedule-table-row:first-child{
+  font-size:1.75rem;
 }
