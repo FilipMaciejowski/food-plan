@@ -129,8 +129,7 @@
 .dashboard__content-top {
   width: 90%;
   height: auto;
-  margin: 0 auto;
-  margin-top: 2.25%;
+  margin: 2.25% auto ;
   display: flex;
   justify-content: space-between;
 }
@@ -363,8 +362,8 @@
       color: $grey1;
       display: flex;
       justify-content: space-between;
-      margin-bottom: 1rem;
-      margin-right: 5rem;
+      margin:0 1rem 0 5rem;
+      
 
       input,
       textarea {
@@ -502,7 +501,7 @@
 
     label {
       font-size: 1.25rem;
-      color:$grey1;
+      color: $grey1;
       display: flex;
       justify-content: space-between;
       margin-bottom: 1rem;
@@ -526,72 +525,62 @@
         }
       }
     }
-    .schedule__week-input-container{
+    .schedule__week-input-container {
       width: 75%;
-    .schedule__week-input {
-      display: flex;
-      justify-content: space-between;
-      width:3%;
-      height: auto;
-      color: $grey1;
-      font-size: 0.75rem;
-      font-family: $main-font;
-      padding: 0.25rem;
-      border: 1px solid lighten($grey3, 15%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      
+      .schedule__week-input {
+        display: flex;
+        justify-content: space-between;
+        width: 3%;
+        height: auto;
+        color: $grey1;
+        font-size: 0.75rem;
+        font-family: $main-font;
+        padding: 0.25rem;
+        border: 1px solid lighten($grey3, 15%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
         text-align: center;
       }
     }
   }
-  }
+}
 
-.add__schedule-table{
+.add__schedule-table {
   width: 100%;
   height: auto;
-  
-  .add__schedule-table-row{
+
+  .add__schedule-table-row {
     width: 100%;
     height: 2.25rem;
   }
-  
 }
 table {
-  border-bottom: 2px solid $grey3;
-  text-transform: uppercase; 
-  border-collapse: collapse;
-  
-}
-td{
-  margin: 0 0;
-  border-left: 2px solid $white1;
   text-transform: uppercase;
-  width: 14.5%;
-  text-align: center;
-  color: $grey1;
-  font-weight: 900;
-  background:$white1;
-  padding: .25rem 0;
   border-collapse: collapse;
+
+  tr {
+    border-bottom: 2px solid $grey3;
+    border-top: 2px solid $grey3;
+  }
+  .cell-empty {
+    border-top: $white1;
+  }
+  .add__schedule-table-row:first-child {
+    font-size: 1.4rem;
+    font-style: $main-font;
+    padding: 0.5rem 0.5rem;
+    border-top: $white1;
+  }
+  td {
+    text-transform: uppercase;
+    text-align: center;
+    color: $grey1;
+    font-weight: 900;
+    width: 14.5%;
+    td:not(.cell-empty) {
+      border-top: 2px solid $grey3;
+    }
+  }
 }
-
-tr{
-  border-collapse: collapse;
-}
-
-
-
-.add__schedule-table-row:first-child{
-  font-size:1.4rem;
-  font-style:$main-font;
-  padding: .5rem .5rem;
-}
-
-td:not(.cell-empty){
-  
-  border-top: 2px solid $grey3;
-  
-}
-
