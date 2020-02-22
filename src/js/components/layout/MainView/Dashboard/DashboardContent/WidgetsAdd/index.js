@@ -5,7 +5,7 @@ class WidgetsAdd extends React.Component {
   render() {
     return (
       <div className="widgets__container">
-        <Link to="/foodplan/recipes/add" className="link__addrecipe">
+        <Link to="/foodplan/recipes/add" className="link__add">
           <div className="widgets__element">
             <div className="widget__element__container">
               <svg
@@ -36,7 +36,7 @@ class WidgetsAdd extends React.Component {
             </div>
           </div>
         </Link>
-        <Link className="link__addrecipe">
+        <Link to="/foodplan/schedules/add" className="link__add">
           <div className="widgets__element">
             <div className="widget__element__container">
               <svg

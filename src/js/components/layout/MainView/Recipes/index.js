@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
-
 import { useSelector, useDispatch } from "react-redux";
-
 import { getRecipes } from "../../../../../redux/actions/recipes";
 
 const Recipes = () => {
