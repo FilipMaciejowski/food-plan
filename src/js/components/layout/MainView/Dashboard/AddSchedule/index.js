@@ -47,7 +47,7 @@ const AddSchedule = () => {
       </div>
       <table className="add__schedule-table">
         <tr className="add__schedule-table-row">
-          <td></td>
+          <td className="cell-empty"></td>
           <td>sniadanie</td>
           <td>drugie sniadanie</td>
           <td>zupa</td>

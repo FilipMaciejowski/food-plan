@@ -12,12 +12,16 @@ const Recipes = () => {
 
   return (
     <div>
-      <p>Recipes</p>
-      <ul>
+      <p>Recipestest</p>
+      <div>
         {recipes.map(recipe => (
-          <li>{recipe.name}</li>
+          <ul>
+            <li>{recipe.id}</li>
+            <li>{recipe.name}</li>
+            <li>{recipe.description}</li>
+          </ul>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };
