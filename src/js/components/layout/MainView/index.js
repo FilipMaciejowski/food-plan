@@ -6,6 +6,7 @@ import Schedules from "./Schedules";
 import Dashboard from "./Dashboard";
 import Recipes from "./Recipes";
 import AddRecipe from "./Dashboard/AddRecipe";
+import AddSchedule from "./Dashboard/AddSchedule";
 
 const MainView = () => {
   return (
@@ -19,6 +20,7 @@ const MainView = () => {
             <Route exact path="/foodplan/recipes" component={Recipes} />
             <Route exact path="/foodplan/recipes/add" component={AddRecipe} />
             <Route exact path="/foodplan/schedules" component={Schedules} />
+            <Route exact path="/foodplan/schedules/add" component={AddSchedule} />
           </Switch>
         </div>
       </div>
