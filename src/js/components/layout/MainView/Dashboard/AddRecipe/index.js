@@ -5,8 +5,11 @@ import { faPlusSquare } from "@fortawesome/free-solid-svg-icons";
 
 const AddRecipe = () => {
   const onSubmit = e => {
+    console.log(e);
     e.preventDefault();
   };
+
+
 
   return (
     <div className="add__recipe__container">
@@ -29,7 +32,7 @@ const AddRecipe = () => {
             Recipe's description
             <textarea
               rows="6"
-              className="recipe__decsription-input"
+              className="recipe__description-input"
               type="text"
               placeholder="add recipe's description"
             />
