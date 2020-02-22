@@ -502,7 +502,7 @@
 
     label {
       font-size: 1.25rem;
-      color: $grey1;
+      color:$grey1;
       display: flex;
       justify-content: space-between;
       margin-bottom: 1rem;
@@ -531,9 +531,9 @@
     .schedule__week-input {
       display: flex;
       justify-content: space-between;
-      width: 3%;
+      width:3%;
       height: auto;
-      color: darken($grey2, 20%);
+      color: $grey1;
       font-size: 0.75rem;
       font-family: $main-font;
       padding: 0.25rem;
@@ -541,10 +541,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      
+        text-align: center;
+      }
     }
   }
   }
-}
 
 .add__schedule-table{
   width: 100%;
@@ -556,15 +558,40 @@
   }
   
 }
-table, th  {
-  border: 1px solid black;
+table {
+  border-bottom: 2px solid $grey3;
   text-transform: uppercase; 
+  border-collapse: collapse;
+  
 }
 td{
-  border: 1px solid black;
-  text-transform: uppercase; 
+  margin: 0 0;
+  border-left: 2px solid $white1;
+  text-transform: uppercase;
+  width: 14.5%;
+  text-align: center;
+  color: $grey1;
+  font-weight: 900;
+  background:$white1;
+  padding: .25rem 0;
+  border-collapse: collapse;
 }
 
-.add__schedule-table-row:first-child{
-  font-size:1.75rem;
+tr{
+  border-collapse: collapse;
 }
+
+
+
+.add__schedule-table-row:first-child{
+  font-size:1.4rem;
+  font-style:$main-font;
+  padding: .5rem .5rem;
+}
+
+td:not(.cell-empty){
+  
+  border-top: 2px solid $grey3;
+  
+}
+
