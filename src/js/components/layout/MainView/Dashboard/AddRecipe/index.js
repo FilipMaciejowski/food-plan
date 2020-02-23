@@ -1,10 +1,10 @@
-import React, {useState} from 'react';
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlusSquare } from "@fortawesome/free-solid-svg-icons";
-import { useForm } from "react-hook-form"
-import { addRecipe } from "../../../../../../redux/actions/recipes"
+import { useForm } from "react-hook-form";
+import { addRecipe } from "../../../../../../redux/actions/recipes";
 import { useDispatch } from "react-redux";
-import { useHistory } from 'react-router';
+import { useHistory } from "react-router-dom";
 
 const formInitialValues = {
   ingredients: {},
@@ -12,17 +12,18 @@ const formInitialValues = {
 };
 
 const AddRecipe = () => {
-  const [formValues, setFormValues] = useState({...formInitialValues});
-  const [ingredient, setIngredient] = useState('');
-  const [instruction, setInstruction] = useState('');
+  const [formValues, setFormValues] = useState({ ...formInitialValues });
+  const [ingredient, setIngredient] = useState("");
+  const [instruction, setInstruction] = useState("");
   const [ingredientCounter, setIngredientCounter] = useState(1);
   const [instructionCounter, setInstructionCounter] = useState(1);
+
   const history = useHistory();
 
-  const {register, handleSubmit} = useForm();
+  const { register, handleSubmit } = useForm();
   const dispatch = useDispatch();
 
-  const onSubmit = (e) => {
+  const onSubmit = e => {
     if (e.name && e.description) {
       const dataToSend = {
         ...e,
@@ -31,21 +32,21 @@ const AddRecipe = () => {
       dispatch(addRecipe(dataToSend));
       history.push("/foodplan/recipes");
     } else {
-      alert('Add values')
+      alert("Add values");
     }
   };
 
-  const handleIngredient = (e) => {
+  const handleIngredient = e => {
     setIngredient(e.target.value);
   };
 
-  const handleInstruction = (e) => {
+  const handleInstruction = e => {
     setInstruction(e.target.value);
   };
 
   const addIngredient = () => {
     if (ingredient) {
-      setFormValues( {
+      setFormValues({
         ...formValues,
         ingredients: {
           ...formValues.ingredients,
@@ -53,13 +54,13 @@ const AddRecipe = () => {
         }
       });
       setIngredientCounter(ingredientCounter + 1);
-      setIngredient('')
+      setIngredient("");
     }
   };
 
   const addInstruction = () => {
     if (instruction) {
-      setFormValues( {
+      setFormValues({
         ...formValues,
         steps: {
           ...formValues.steps,
@@ -67,23 +68,33 @@ const AddRecipe = () => {
         }
       });
       setInstructionCounter(instructionCounter + 1);
-      setInstruction('')
+      setInstruction("");
     }
   };
 
-  const listItemsIngredients = Object.keys(formValues.ingredients).map((key) => {
-    return <li key={key} className="ingridients-element">{formValues.ingredients[key]}</li>
+  const listItemsIngredients = Object.keys(formValues.ingredients).map(key => {
+    return (
+      <li key={key} className="ingridients-element">
+        {formValues.ingredients[key]}
+      </li>
+    );
   });
 
-  const listItemsInstructions = Object.keys(formValues.steps).map((key) => {
-    return <li key={key} className="instructions-element">{formValues.steps[key]}</li>
+  const listItemsInstructions = Object.keys(formValues.steps).map(key => {
+    return (
+      <li key={key} className="instructions-element">
+        {formValues.steps[key]}
+      </li>
+    );
   });
 
   return (
     <div className="add__recipe__container">
       <div className="add__recipe__header">
         <h1>new recipe</h1>
-        <button type="submit" className="add__recipe__button" form='form1'>Save and close</button>
+        <button type="submit" className="add__recipe__button" form="form1">
+          Save and close
+        </button>
       </div>
       <div className="add__recipe__input">
         <form id="form1" onSubmit={handleSubmit(onSubmit)}>
@@ -126,13 +137,12 @@ const AddRecipe = () => {
                   />
                 </label>
               </form>
-              <FontAwesomeIcon className="icon-1" icon={faPlusSquare} onClick={() => addInstruction()} />
+              <FontAwesomeIcon
+                className="icon-1"
+                icon={faPlusSquare}
+                onClick={() => addInstruction()}
+              />
             </div>
-          </div>
-          <div className="add__recipe__content-list">
-            <ul className="add__recipe__content-list">
-              {listItemsInstructions}
-            </ul>
           </div>
         </div>
 
@@ -150,14 +160,21 @@ const AddRecipe = () => {
                   />
                 </label>
               </form>
-              <FontAwesomeIcon className="icon-2" icon={faPlusSquare} onClick={() => addIngredient()}/>
+              <FontAwesomeIcon
+                className="icon-2"
+                icon={faPlusSquare}
+                onClick={() => addIngredient()}
+              />
             </div>
           </div>
-          <div className="add__recipe__content-list">
-            <ul>
-              {listItemsIngredients}
-            </ul>
-          </div>
+        </div>
+      </div>
+      <div className="add__recipe__content-list-container">
+        <div className="add__recipe__content-list">
+          <ul>{listItemsInstructions}</ul>
+        </div>
+        <div className="add__recipe__content-list2">
+          <ul>{listItemsIngredients}</ul>
         </div>
       </div>
     </div>
@@ -165,3 +182,5 @@ const AddRecipe = () => {
 };
 
 export default AddRecipe;
+
+
