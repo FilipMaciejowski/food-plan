@@ -715,3 +715,7 @@ td:not(.cell-empty) {
     border-top: 2px solid $grey3;
     }
   
+
+  .recipes__content-container{
+    list-style-position: inside;
+  }

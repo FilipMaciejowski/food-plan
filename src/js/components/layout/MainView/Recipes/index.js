@@ -11,8 +11,7 @@ const Recipes = () => {
   }, []);
 
   return (
-    <div>
-      <p>Recipestest</p>
+    <div className="recipes__content-container">
       <div>
         {recipes.map(recipe => (
           <ul>
