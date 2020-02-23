@@ -1,14 +1,6 @@
 {
   "user": {
-<<<<<<< HEAD
-
     "name": "Paweł"
-
-
-
-=======
-    "name": ""
->>>>>>> f5afbbd85553069de9dfa613dcaa8404bd1b6bdc
   },
   "recipes": [
     {
@@ -20,6 +12,17 @@
       ],
       "ingredients": [
         "Pomidory"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Zupa ogórkowa",
+      "description": "Pyszna zupa",
+      "steps": [
+        "Wlej wodę do garnka"
+      ],
+      "ingredients": [
+        "Ogórki"
       ]
     }
   ],
@@ -78,6 +81,107 @@
         4,
         5
       ]
+    },
+    {
+      "name": "Test",
+      "description": "Test",
+      "weekNumber": "1",
+      "monday": [
+        "Zupa ogórkowa",
+        "Zupa pomidorowa",
+        "",
+        "",
+        ""
+      ],
+      "id": 2
+    },
+    {
+      "name": "Test",
+      "description": "Test",
+      "weekNumber": "2",
+      "monday": [
+        "Zupa ogórkowa",
+        "Zupa ogórkowa",
+        "Zupa pomidorowa",
+        "Zupa pomidorowa",
+        ""
+      ],
+      "id": 3
+    },
+    {
+      "name": "Test",
+      "description": "Test",
+      "weekNumber": "3",
+      "monday": [
+        "Zupa ogórkowa",
+        "Zupa ogórkowa",
+        "",
+        "Zupa pomidorowa",
+        "Zupa pomidorowa"
+      ],
+      "tuesday": [
+        "Zupa ogórkowa",
+        "Zupa ogórkowa",
+        "Zupa ogórkowa",
+        "Zupa ogórkowa",
+        "Zupa pomidorowa"
+      ],
+      "id": 4
+    },
+    {
+      "name": "Test",
+      "description": "Test ostateczny",
+      "weekNumber": "5",
+      "monday": [
+        "Zupa pomidorowa",
+        "Zupa ogórkowa",
+        "Zupa pomidorowa",
+        "Zupa pomidorowa",
+        "Zupa ogórkowa"
+      ],
+      "tuesday": [
+        "Zupa pomidorowa",
+        "Zupa pomidorowa",
+        "Zupa ogórkowa",
+        "Zupa ogórkowa",
+        "Zupa ogórkowa"
+      ],
+      "wednesday": [
+        "Zupa ogórkowa",
+        "Zupa ogórkowa",
+        "Zupa ogórkowa",
+        "Zupa ogórkowa",
+        "Zupa ogórkowa"
+      ],
+      "thrusday": [
+        "Zupa ogórkowa",
+        "",
+        "Zupa ogórkowa",
+        "Zupa ogórkowa",
+        "Zupa ogórkowa"
+      ],
+      "friday": [
+        "Zupa ogórkowa",
+        "Zupa ogórkowa",
+        "Zupa ogórkowa",
+        "Zupa ogórkowa",
+        "Zupa ogórkowa"
+      ],
+      "saturday": [
+        "Zupa ogórkowa",
+        "Zupa ogórkowa",
+        "Zupa ogórkowa",
+        "Zupa ogórkowa",
+        "Zupa ogórkowa"
+      ],
+      "sunday": [
+        "Zupa ogórkowa",
+        "Zupa ogórkowa",
+        "Zupa ogórkowa",
+        "Zupa ogórkowa",
+        "Zupa ogórkowa"
+      ],
+      "id": 5
     }
   ]
 }
