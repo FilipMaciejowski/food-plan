@@ -22,7 +22,7 @@ const getRecipes = () => dispatch => {
 const addRecipe = recipe => dispatch => {
   axios
     .post("http://localhost:3000/recipes", recipe)
-    .then(res => dispatch(recipeAdded(res.data)));
+    .then(res => dispatch(recipeAdded(res.data)))
 };
 
 export { RECIPES_FETCHED, RECIPE_ADDED, getRecipes, addRecipe };
