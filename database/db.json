@@ -13,54 +13,6 @@
       "ingredients": [
         "Pomidory"
       ]
-    },
-    {
-      "name": "szarlotka",
-      "description": "szarlotka babci jadzi",
-      "ingredients": {
-        "1": "3 jajka"
-      },
-      "steps": {
-        "1": "otworz piekarnik ",
-        "2": "zamknij piec"
-      },
-      "id": 2
-    },
-    {
-      "name": "szarlotka",
-      "description": "szarlotka babci jadzi",
-      "ingredients": {
-        "1": "3 jajka"
-      },
-      "steps": {
-        "1": "otworz piekarnik ",
-        "2": "zamknij piec"
-      },
-      "id": 3
-    },
-    {
-      "name": "szarlotka",
-      "description": "szarlotka babci jadzi",
-      "ingredients": {
-        "1": "3 jajka"
-      },
-      "steps": {
-        "1": "otworz piekarnik ",
-        "2": "zamknij piec"
-      },
-      "id": 4
-    },
-    {
-      "name": "fffdsfdsv",
-      "description": "dfdsfsdfsfsfds",
-      "ingredients": {
-        "1": "sdfdsvsdv"
-      },
-      "steps": {
-        "1": "sfdssdfsd",
-        "2": "svfdsfsdvsd"
-      },
-      "id": 5
     }
   ],
   "schedules": [
