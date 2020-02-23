@@ -8,7 +8,7 @@
 // NAVBAR
 .navbar__dashboard-container {
   background-color: $grey2;
-  padding: 0.5rem 2rem;
+  padding: .5rem 2rem;
   height: auto;
   .navbar__dashboard-content {
     width: 100%;
@@ -38,7 +38,7 @@
         color: $white2;
         .navbar__alttitle {
           color: $orange2;
-          margin-left: 0.5rem;
+          margin-left: .5rem;
         }
       }
     }
@@ -119,8 +119,11 @@
 // DASHBOARD CONTENT
 
 .main__dashboard-content {
-  background-image: url(".././assets/images/background.png");
+  background-image: url("../../assets/images/background.png");
   width: 81.5%;
+}
+
+.dashboard__content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -129,8 +132,7 @@
 .dashboard__content-top {
   width: 90%;
   height: auto;
-  margin: 0 auto;
-  margin-top: 2.25%;
+  margin: 2.25% auto ;
   display: flex;
   justify-content: space-between;
 }
@@ -148,7 +150,7 @@
   width: auto;
 }
 
-.link__addrecipe {
+.link__add {
   width: 14rem;
   display: flex;
   height: 12.5rem;
@@ -212,8 +214,7 @@
   position: relative;
   width: 100%;
   height: auto;
-  border: 1px solid $notificationsYellow;
-  border-style: dashed;
+  border: 1px dashed $notificationsYellow;
   display: flex;
 
   div p {
@@ -225,8 +226,7 @@
   position: relative;
   width: 100%;
   height: auto;
-  border: 1px solid $notificationGreen;
-  border-style: dashed;
+  border: 1px dashed $notificationGreen;
   display: flex;
 
   div p {
@@ -250,6 +250,100 @@
   right: 3px;
 }
 
+// SCHEDULE OVERVIEW
+.dashboard__content-bottom {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 2.25%;
+  background-color: #fffffa;
+  border: 1px dashed #468966;
+
+  .schedule__overview-title {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.25rem;
+    color: $orange3;
+  }
+
+  .schedule__overview-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .schedule__overview-content-day {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2rem;
+
+      .schedule__overview-content-element-title {
+        width: 12rem;
+        margin-top: 1rem;
+        padding: 0.75rem 0;
+        border-top: 0.0625rem solid $grey3;
+        border-bottom: 0.0625rem solid $grey3;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        color: $grey2;
+      }
+      .schedule__overview-content-element {
+        text-align: center;
+        padding: 0.75rem 0;
+        font-size: 1.25rem;
+        color: $grey3;
+        border-bottom: 0.0625rem solid $grey3;
+      }
+    }
+  }
+}
+
+.schedule__overview-content-nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 1rem;
+
+  .schedule__overview-content-nav-element {
+    display: flex;
+    font-size: 0.875rem;
+    color: $orange3;
+  }
+
+  .prev {
+    margin-left: 1rem;
+
+    span:nth-of-type(1) {
+      align-self: center;
+      font-size: 2rem;
+      margin-right: 0.5rem;
+    }
+
+    span:nth-of-type(2) {
+      align-self: center;
+    }
+  }
+
+  .next {
+    margin-right: 1rem;
+
+    span:nth-of-type(1) {
+      align-self: center;
+      margin-right: 0.5rem;
+    }
+
+    span:nth-of-type(2) {
+      font-size: 2rem;
+    }
+  }
+}
+
+//ADD RECIPE MODAL
+
+.add__recipe__modal {
+  width: 75vw;
+  height: 75vh;
+}
 // USER FIRST ENTRY
 
 .dashboard__user__first__entry-container {
@@ -285,12 +379,12 @@
       margin-bottom: 1.5rem;
 
       input {
-        padding: 0 0.6rem;
+        padding: 0 .6rem;
         margin-bottom: 1rem;
         width: 18.25rem;
         height: 1.875rem;
         border: none;
-        border: 0.0625rem solid $grey4;
+        border: .0625rem solid $grey4;
         color: darken($grey2, 20%);
         &::placeholder {
           color: lighten($grey3, 15%);
@@ -328,7 +422,7 @@
   width: 100%;
   height: auto;
   border-bottom: 2px solid $grey3;
-  padding-bottom: 0.25rem;
+  padding-bottom: .25rem;
   display: flex;
   justify-content: space-between;
   h1 {
@@ -341,8 +435,7 @@
   }
   button {
     background-color: $orange3;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding: 0 .5rem 0 .5rem  ;
     border: none;
     color: $white2;
     font-size: 1rem;
@@ -363,8 +456,8 @@
       color: $grey1;
       display: flex;
       justify-content: space-between;
-      margin-bottom: 1rem;
-      margin-right: 5rem;
+      margin:1rem 5rem 0 0 ;
+      
 
       input,
       textarea {
@@ -372,9 +465,9 @@
         justify-content: flex-start;
         height: auto;
         color: darken($grey2, 20%);
-        font-size: 0.75rem;
+        font-size: .75rem;
         font-family: $main-font;
-        padding: 0.25rem;
+        padding: .25rem;
         border: 1px solid lighten($grey3, 15%);
         &::placeholder {
           color: lighten($grey3, 15%);
@@ -394,14 +487,15 @@
   display: flex;
   justify-content: space-between;
   .add__recipe__content {
-    width: 45%;
+    width: 47.5%;
     .add__recipe__content-header {
       h1 {
         text-transform: uppercase;
         font-size: 1.5rem;
         font-weight: 200;
         font-family: $main-font;
-        padding-bottom: 0.25rem;
+        color: $grey1;
+        padding-bottom: .25rem;
         border-bottom: 2px solid $grey3;
       }
       .add__recipe__content-fill {
@@ -416,8 +510,8 @@
             width: 92.5%;
             height: auto;
             color: darken($grey2, 20%);
-            font-size: 0.75rem;
-            padding: 0.25rem;
+            font-size: .75rem;
+            padding: .25rem;
             border: 1px solid lighten($grey3, 15%);
             font-family: $main-font;
             &::placeholder {
@@ -443,17 +537,181 @@
   }
 }
 
+
 .add__recipe__content-list {
-  ul {
+  width: 47.5%;
+  ul{
     counter-reset: item;
     margin-top: 1rem;
-    overflow: scroll;
+    width:100%;
     li {
       display: block;
+      font-family: $main-font;
+      font-family: $main-font;
+      color: $grey1;
     }
     li:before {
       content: counters(item, ".") ". ";
       counter-increment: item;
+      
+    }
+
+  }
+}
+
+.add__recipe__content-list2{
+  width: 47.5%;
+    ul{
+    margin-top: 1rem;
+    width:100%;
+    height: auto;
+    list-style-type: disc;
+    list-style-position: inside;
+    li {
+      font-family: $main-font;
+      color: $grey1;
+      
+    }
+    
+
+  }
+}
+
+.add__recipe__content-list-container{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+}
+
+
+
+//ADD SCHEDULE
+
+.add__schedule__container {
+  width: 100%;
+  height: 100%;
+  background-color: $white1;
+  padding: 2rem 2rem;
+}
+
+.add__schedule__header {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid $grey3;
+  padding-bottom: .25rem;
+  display: flex;
+  justify-content: space-between;
+  h1 {
+    text-transform: uppercase;
+    color: $orange3;
+    font-family: $main-font;
+    font-weight: 900;
+    font-size: 1.75rem;
+    margin: 0 0;
+  }
+  button {
+    background-color: $orange3;
+    padding: 0 .5rem 0 .5rem;
+
+    border: none;
+    color: $white2;
+    font-size: 1rem;
+    font-family: $main-font;
+  }
+}
+
+.add__schedule__input {
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      font-size: 1.25rem;
+      color: $grey1;
+      display: flex;
+      justify-content: space-between;
+      margin:1rem 5rem 0 0 ;
+
+      .schedule__name-input,
+      textarea {
+        width: 75%;
+        height: auto;
+        color: darken($grey2, 20%);
+        font-size: .75rem;
+        font-family: $main-font;
+        padding: .25rem;
+        border: 1px solid lighten($grey3, 15%);
+        &::placeholder {
+          color: lighten($grey3, 15%);
+        }
+        textarea.schedule__name-description {
+          height: auto;
+          font-family: $main-font;
+        }
+      }
+    }
+    .schedule__week-input-container {
+      width: 75%;
+      margin-bottom: 1.5rem;
+      .schedule__week-input {
+        display: flex;
+        justify-content: space-between;
+        width: 3%;
+        height: auto;
+        color: $grey1;
+        font-size: .75rem;
+        font-family: $main-font;
+        padding: .25rem;
+        border: 1px solid lighten($grey3, 15%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
     }
   }
 }
+
+.add__schedule-table {
+  width: 100%;
+  height: auto;
+
+  .add__schedule-table-row {
+    width: 100%;
+    height: 2.25rem;
+  }
+}
+table {
+  text-transform: uppercase;
+  border-collapse: collapse;
+
+  tr {
+    border-bottom: 2px solid $grey3;
+    border-top: 2px solid $grey3;
+  }
+  .cell-empty {
+    border-top: $white1;
+  }
+  .add__schedule-table-row:first-child {
+    font-size: 1.4rem;
+    font-style: $main-font;
+    padding: .5rem .5rem;
+    border-top: $white1;
+  }
+  
+}
+
+td:not(.cell-empty) {
+    text-transform: uppercase;
+    text-align: center;
+    color: $grey1;
+    font-weight: 900;
+    width: 14.5%;
+    border-top: 2px solid $grey3;
+    }
+  

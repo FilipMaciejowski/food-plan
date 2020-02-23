@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
-
 import { useSelector, useDispatch } from "react-redux";
-
 import { getRecipes } from "../../../../../redux/actions/recipes";
 
 const Recipes = () => {
@@ -14,12 +12,16 @@ const Recipes = () => {
 
   return (
     <div>
-      <p>Recipes</p>
-      <ul>
+      <p>Recipestest</p>
+      <div>
         {recipes.map(recipe => (
-          <li>{recipe.name}</li>
+          <ul>
+            <li>{recipe.id}</li>
+            <li>{recipe.name}</li>
+            <li>{recipe.description}</li>
+          </ul>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };

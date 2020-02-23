@@ -1,10 +1,14 @@
 {
   "user": {
+<<<<<<< HEAD
 
     "name": "Paweł"
 
 
 
+=======
+    "name": ""
+>>>>>>> f5afbbd85553069de9dfa613dcaa8404bd1b6bdc
   },
   "recipes": [
     {
