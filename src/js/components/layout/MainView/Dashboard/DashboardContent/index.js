@@ -6,6 +6,7 @@ import ScheduleOverview from "./ScheduleOverview";
 
 const DashboardContent = () => {
   return (
+    <>
     <div className="dashboard__content">
       <div className="dashboard__content-top">
         <Notifications />
@@ -15,6 +16,7 @@ const DashboardContent = () => {
         <ScheduleOverview />
       </div>
     </div>
+    </>
   );
 };
 

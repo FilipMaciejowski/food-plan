@@ -8,7 +8,7 @@
 // NAVBAR
 .navbar__dashboard-container {
   background-color: $grey2;
-  padding: .5rem 2rem;
+  padding: 0.5rem 2rem;
   height: auto;
   .navbar__dashboard-content {
     width: 100%;
@@ -38,7 +38,7 @@
         color: $white2;
         .navbar__alttitle {
           color: $orange2;
-          margin-left: .5rem;
+          margin-left: 0.5rem;
         }
       }
     }
@@ -132,7 +132,7 @@
 .dashboard__content-top {
   width: 90%;
   height: auto;
-  margin: 2.25% auto ;
+  margin: 2.25% auto;
   display: flex;
   justify-content: space-between;
 }
@@ -379,12 +379,12 @@
       margin-bottom: 1.5rem;
 
       input {
-        padding: 0 .6rem;
+        padding: 0 0.6rem;
         margin-bottom: 1rem;
         width: 18.25rem;
         height: 1.875rem;
         border: none;
-        border: .0625rem solid $grey4;
+        border: 0.0625rem solid $grey4;
         color: darken($grey2, 20%);
         &::placeholder {
           color: lighten($grey3, 15%);
@@ -422,7 +422,7 @@
   width: 100%;
   height: auto;
   border-bottom: 2px solid $grey3;
-  padding-bottom: .25rem;
+  padding-bottom: 0.25rem;
   display: flex;
   justify-content: space-between;
   h1 {
@@ -435,7 +435,7 @@
   }
   button {
     background-color: $orange3;
-    padding: 0 .5rem 0 .5rem  ;
+    padding: 0 0.5rem 0 0.5rem;
     border: none;
     color: $white2;
     font-size: 1rem;
@@ -456,8 +456,7 @@
       color: $grey1;
       display: flex;
       justify-content: space-between;
-      margin:1rem 5rem 0 0 ;
-      
+      margin: 1rem 5rem 0 0;
 
       input,
       textarea {
@@ -465,9 +464,9 @@
         justify-content: flex-start;
         height: auto;
         color: darken($grey2, 20%);
-        font-size: .75rem;
+        font-size: 0.75rem;
         font-family: $main-font;
-        padding: .25rem;
+        padding: 0.25rem;
         border: 1px solid lighten($grey3, 15%);
         &::placeholder {
           color: lighten($grey3, 15%);
@@ -495,7 +494,7 @@
         font-weight: 200;
         font-family: $main-font;
         color: $grey1;
-        padding-bottom: .25rem;
+        padding-bottom: 0.25rem;
         border-bottom: 2px solid $grey3;
       }
       .add__recipe__content-fill {
@@ -510,8 +509,8 @@
             width: 92.5%;
             height: auto;
             color: darken($grey2, 20%);
-            font-size: .75rem;
-            padding: .25rem;
+            font-size: 0.75rem;
+            padding: 0.25rem;
             border: 1px solid lighten($grey3, 15%);
             font-family: $main-font;
             &::placeholder {
@@ -537,13 +536,12 @@
   }
 }
 
-
 .add__recipe__content-list {
   width: 47.5%;
-  ul{
+  ul {
     counter-reset: item;
     margin-top: 1rem;
-    width:100%;
+    width: 100%;
     li {
       display: block;
       font-family: $main-font;
@@ -553,39 +551,32 @@
     li:before {
       content: counters(item, ".") ". ";
       counter-increment: item;
-      
     }
-
   }
 }
 
-.add__recipe__content-list2{
+.add__recipe__content-list2 {
   width: 47.5%;
-    ul{
+  ul {
     margin-top: 1rem;
-    width:100%;
+    width: 100%;
     height: auto;
     list-style-type: disc;
     list-style-position: inside;
     li {
       font-family: $main-font;
       color: $grey1;
-      
     }
-    
-
   }
 }
 
-.add__recipe__content-list-container{
+.add__recipe__content-list-container {
   margin-top: 1rem;
   display: flex;
   justify-content: space-between;
   width: 100%;
   height: auto;
 }
-
-
 
 //ADD SCHEDULE
 
@@ -600,7 +591,7 @@
   width: 100%;
   height: auto;
   border-bottom: 2px solid $grey3;
-  padding-bottom: .25rem;
+  padding-bottom: 0.25rem;
   display: flex;
   justify-content: space-between;
   h1 {
@@ -613,7 +604,7 @@
   }
   button {
     background-color: $orange3;
-    padding: 0 .5rem 0 .5rem;
+    padding: 0 0.5rem 0 0.5rem;
 
     border: none;
     color: $white2;
@@ -635,16 +626,16 @@
       color: $grey1;
       display: flex;
       justify-content: space-between;
-      margin:1rem 5rem 0 0 ;
+      margin: 1rem 5rem 0 0;
 
       .schedule__name-input,
       textarea {
         width: 75%;
         height: auto;
         color: darken($grey2, 20%);
-        font-size: .75rem;
+        font-size: 0.75rem;
         font-family: $main-font;
-        padding: .25rem;
+        padding: 0.25rem;
         border: 1px solid lighten($grey3, 15%);
         &::placeholder {
           color: lighten($grey3, 15%);
@@ -664,9 +655,9 @@
         width: 3%;
         height: auto;
         color: $grey1;
-        font-size: .75rem;
+        font-size: 0.75rem;
         font-family: $main-font;
-        padding: .25rem;
+        padding: 0.25rem;
         border: 1px solid lighten($grey3, 15%);
         display: flex;
         align-items: center;
@@ -700,18 +691,67 @@ table {
   .add__schedule-table-row:first-child {
     font-size: 1.4rem;
     font-style: $main-font;
-    padding: .5rem .5rem;
+    padding: 0.5rem 0.5rem;
     border-top: $white1;
   }
-  
 }
 
 td:not(.cell-empty) {
-    text-transform: uppercase;
-    text-align: center;
-    color: $grey1;
-    font-weight: 900;
-    width: 14.5%;
-    border-top: 2px solid $grey3;
+  text-transform: uppercase;
+  text-align: center;
+  color: $grey1;
+  font-weight: 900;
+  width: 14.5%;
+  border-top: 2px solid $grey3;
+}
+
+
+.recipes__content-container {
+  height: 100%;
+  width: 1005;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-position: inside;
+}
+
+.recipes__content__view {
+  height: 85%;
+  width: 90%;
+  background-color: $white1;
+  border: 1px solid $grey3;
+  padding: 0.75rem 0.75rem;
+  color: $grey1;
+
+  .recipes__content__view-header {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid $grey3;
+    padding-bottom: .25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      text-transform: uppercase;
+      color: $orange3;
+      font-family: $main-font;
+      font-weight: 900;
+      font-size: 1.75rem;
+      margin: 0 0;
     }
-  
+    svg {
+      width: 3%;
+      height: auto;
+      align-self: flex-start;
+      padding: 0 0;
+      align-self: center;
+      cursor: pointer;
+
+      path {
+        width: 100%;
+        height: 100%;
+        fill: $widgetGreen;
+      }
+    }
+  }
+}
