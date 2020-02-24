@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { getRecipes } from "../../../../../redux/actions/recipes";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlusSquare } from "@fortawesome/free-solid-svg-icons";
+import { faPlusSquare, faEdit, faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 
 const Recipes = () => {
   const dispatch = useDispatch();
@@ -17,24 +17,30 @@ const Recipes = () => {
       <div className="recipes__content__view">
         <div className="recipes__content__view-header">
           <h1>list of the recipes</h1>
-          <FontAwesomeIcon
-                className="icon-plus"
-                icon={faPlusSquare}
-          />
+          <FontAwesomeIcon className="icon-plus" icon={faPlusSquare} />
         </div>
-        <div>
+        <table className="recipes__content__table">
+          <tr className="recipes__content__table-header">
+            <th>id</th>
+            <th>name</th>
+            <th>description</th>
+            <th className="table__header__cell-actions">actions</th>
+          </tr>
           {recipes.map(recipe => (
-            <ul>
-              <li>{recipe.id}</li>
-              <li>{recipe.name}</li>
-              <li>{recipe.description}</li>
-            </ul>
+            <tr className="recipes__content__table-cell">
+              <td>{recipe.id}</td>
+              <td>{recipe.name}</td>
+              <td>{recipe.description}</td>
+              <td>
+                <FontAwesomeIcon className="icon-edit" icon={faEdit} />
+                <FontAwesomeIcon className="icon-delete" icon={faTrashAlt} />
+              </td>
+            </tr>
           ))}
-        </div>
+        </table>
       </div>
     </div>
   );
 };
 
 export default Recipes;
-
