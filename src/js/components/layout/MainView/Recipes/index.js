@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { getRecipes } from "../../../../../redux/actions/recipes";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlusSquare } from "@fortawesome/free-solid-svg-icons";
+import { faPlusSquare, faEdit, faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 
 const Recipes = () => {
   const dispatch = useDispatch();
@@ -24,14 +24,17 @@ const Recipes = () => {
             <th>id</th>
             <th>name</th>
             <th>description</th>
-           <th className="table__header__cell-actions">actions</th>
+            <th className="table__header__cell-actions">actions</th>
           </tr>
           {recipes.map(recipe => (
             <tr className="recipes__content__table-cell">
               <td>{recipe.id}</td>
               <td>{recipe.name}</td>
               <td>{recipe.description}</td>
-              <td>add-minus</td>
+              <td>
+                <FontAwesomeIcon className="icon-edit" icon={faEdit} />
+                <FontAwesomeIcon className="icon-delete" icon={faTrashAlt} />
+              </td>
             </tr>
           ))}
         </table>
