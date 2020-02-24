@@ -755,3 +755,27 @@ td:not(.cell-empty) {
     }
   }
 }
+
+ .recipes__content__table{
+   width: 100%;
+   height: auto;
+.recipes__content__table-header{
+  text-transform: uppercase;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 1.25rem;
+  /* display: flex;
+  justify-content: space-between; */
+  width: 100%;
+  height:auto;
+    
+}
+
+.table__header__cell-actions{
+  text-align: center;
+  
+}
+.recipes__content__table-cell td:not(:last-child) {
+    text-align: left;
+  }
+ }
