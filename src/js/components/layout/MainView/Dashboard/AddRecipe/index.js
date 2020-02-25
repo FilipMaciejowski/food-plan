@@ -12,7 +12,8 @@ import { useHistory } from "react-router-dom";
 
 const formInitialValues = {
   ingredients: {},
-  steps: {}
+  steps: {},
+  close: false
 };
 
 const AddRecipe = () => {
@@ -76,10 +77,55 @@ const AddRecipe = () => {
     }
   };
 
+  const deleteInstruction = key => {
+    delete formValues.steps[key];
+    setFormValues({
+      ...formValues,
+      close: true
+    });
+  };
+
+  const editInstruction = key => {
+    const edit = prompt("Please, edit instruction");
+    formValues.steps[key] = edit;
+    setFormValues({
+      ...formValues,
+      close: true
+    });
+    /* console.log(edit); */
+  };
+
+  const deleteIngredient = key => {
+    delete formValues.ingredients[key];
+    setFormValues({
+      ...formValues,
+      close: true
+    });
+  };
+
+  const editIngredient = key => {
+    const edit = prompt("Please, edit ingredient");
+    formValues.ingredients[key] = edit;
+    setFormValues({
+      ...formValues,
+      close: true
+    });
+  };
+
   const listItemsIngredients = Object.keys(formValues.ingredients).map(key => {
     return (
       <li key={key} className="ingridients-element">
         {formValues.ingredients[key]}
+        <FontAwesomeIcon
+          className="icon-edit"
+          icon={faEdit}
+          onClick={() => editIngredient(key)}
+        />
+        <FontAwesomeIcon
+          className="icon-delete"
+          icon={faTrashAlt}
+          onClick={() => deleteIngredient(key)}
+        />
       </li>
     );
   });
@@ -88,8 +134,16 @@ const AddRecipe = () => {
     return (
       <li key={key} className="instructions-element">
         {formValues.steps[key]}
-        <FontAwesomeIcon className="icon-edit" icon={faEdit} />
-        <FontAwesomeIcon className="icon-delete" icon={faTrashAlt} />
+        <FontAwesomeIcon
+          className="icon-edit"
+          icon={faEdit}
+          onClick={() => editInstruction(key)}
+        />
+        <FontAwesomeIcon
+          className="icon-delete"
+          icon={faTrashAlt}
+          onClick={() => deleteInstruction(key)}
+        />
       </li>
     );
   });
@@ -188,5 +242,3 @@ const AddRecipe = () => {
 };
 
 export default AddRecipe;
-
-
