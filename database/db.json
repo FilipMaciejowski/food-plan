@@ -2,44 +2,20 @@
   "user": {
     "name": "Filip"
   },
-
-  "recipes": [],
   "recipes": [
     {
-      "id": 1,
-      "name": "Zupa pomidorowa",
-      "description": "Pyszna zupa pomidorowa z całych pomidorów.",
-      "steps": [
-        "Wlej wodę do garnka"
-      ],
-      "ingredients": [
-        "Pomidory"
-      ]
-    },
-    {
-      "id": 2,
-      "name": "Zupa ogórkowa",
-      "description": "Pyszna zupa",
-      "steps": [
-        "Wlej wodę do garnka"
-      ],
-      "ingredients": [
-        "Ogórki"
-      ]
-    },
-    {
-      "name": "jdnjdnjern",
-      "description": "dhj dfh fdh df fh",
+      "name": "aaaaaaa",
+      "description": "vvvvv",
       "ingredients": {
-        "1": "h shdsv dvshv hv eh"
+        "1": "nnnnnn"
       },
       "steps": {
-        "1": "jnjn jve vej vej "
+        "1": "ffffff"
       },
-      "id": 3
+      "close": false,
+      "id": 1
     }
   ],
-
   "schedules": [
     {
       "id": 1,

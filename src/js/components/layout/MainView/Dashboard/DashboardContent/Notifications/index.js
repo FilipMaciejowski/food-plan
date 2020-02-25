@@ -1,7 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useSelector} from "react-redux";
 
+
+  
+ 
 
 const Notifications = () => {
+const [recipeNumber, setRecipeNumber] = useState(0);
+const recipes = useSelector(state => state.recipes);
+useEffect(() => {
+recipesNumber();
+});
+
+const recipesNumber = () => {
+  let number = 0;
+  Object.keys(recipes).map((key) => 
+  {
+    number ++;
+  })
+   setRecipeNumber(number);
+}
 
     return (
       <div className="notifications">
@@ -28,7 +46,7 @@ const Notifications = () => {
             </g>
           </svg>
           <div className="notification__element__text">
-            <p>Masz już 99 przepisów, nieźle!</p>
+            <p>{`Masz już ${recipeNumber} przepisów, nieźle!`}</p>
           </div>
           <svg
             version="1.2"
@@ -41,7 +59,7 @@ const Notifications = () => {
               mixBlendMode: "normal",
               fill: "rgb(52, 152, 219)",
               width: "25px",
-              height: "25px",
+              height: "25px"
             }}
           >
             <g>
@@ -57,7 +75,6 @@ const Notifications = () => {
         <div className="notifications__element__2">
           <svg
             version="1.2"
-            
             viewBox="0 0 24 24"
             className="ng-element-sign"
             dataId="6da813db9f044a9d8b8159fbf4b56868"
@@ -87,13 +104,12 @@ const Notifications = () => {
             className="ng-element"
             dataId="869fd61eedf54e3caadb44d6bc83e8fd"
             style={{
-              position:"absolute",
+              position: "absolute",
               opacity: 1,
               mixBlendMode: "normal",
               fill: "rgb(255, 176, 59)",
               width: "25px",
-              height: "25px",
-              
+              height: "25px"
             }}
           >
             <g>
@@ -141,7 +157,7 @@ const Notifications = () => {
               mixBlendMode: "normal",
               fill: "rgb(70, 137, 102)",
               width: "25px",
-              height: "25px",
+              height: "25px"
             }}
           >
             <g>

@@ -19,7 +19,6 @@ const Recipes = () => {
     let newData = Object.assign(recipe);
     newData.name = editName;
     newData.description = editDescription; 
-    console.log(newData);
     dispatch(recipeEdit(newData));
   };
 
