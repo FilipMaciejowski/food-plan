@@ -13,6 +13,19 @@ const recipeAdded = recipe => ({
   payload: recipe
 });
 
+const recipeDelete = id => dispatch => {
+  axios
+    .delete(`http://localhost:3000/recipes/${id}`)
+    .then(res => dispatch(getRecipes()));
+};
+
+const recipeEdit = recipe => dispatch => {
+  axios
+    .put(`http://localhost:3000/recipes/${recipe.id}`, recipe)
+    .then(res => dispatch(getRecipes()));
+};
+
+
 const getRecipes = () => dispatch => {
   axios
     .get("http://localhost:3000/recipes")
@@ -25,4 +38,11 @@ const addRecipe = recipe => dispatch => {
     .then(res => dispatch(recipeAdded(res.data)))
 };
 
-export { RECIPES_FETCHED, RECIPE_ADDED, getRecipes, addRecipe };
+export {
+  RECIPES_FETCHED,
+  RECIPE_ADDED,
+  getRecipes,
+  addRecipe,
+  recipeDelete,
+  recipeEdit
+};
