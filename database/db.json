@@ -2,6 +2,8 @@
   "user": {
     "name": "Filip"
   },
+
+  "recipes": [],
   "recipes": [
     {
       "id": 1,
@@ -37,6 +39,7 @@
       "id": 3
     }
   ],
+
   "schedules": [
     {
       "id": 1,
