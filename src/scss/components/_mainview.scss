@@ -7,9 +7,9 @@
 
 // NAVBAR
 .navbar__dashboard-container {
-  height: 12.5vh;
+  height: 12.5%;
   background-color: $grey2;
-  padding: 0.5rem .5rem;
+  padding: .5rem .5rem;
   display: flex;
   align-items: center;
   
@@ -68,7 +68,7 @@
 
 .main__dashboard-container {
   width: 100%;
-  height: 87.5vh;
+  height: 87.5%;
   display: flex;
   
 }
@@ -446,6 +446,7 @@
     color: $white2;
     font-size: 1rem;
     font-family: $main-font;
+    cursor: pointer;
   }
 }
 

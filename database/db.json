@@ -24,6 +24,17 @@
       "ingredients": [
         "Ogórki"
       ]
+    },
+    {
+      "name": "jdnjdnjern",
+      "description": "dhj dfh fdh df fh",
+      "ingredients": {
+        "1": "h shdsv dvshv hv eh"
+      },
+      "steps": {
+        "1": "jnjn jve vej vej "
+      },
+      "id": 3
     }
   ],
   "schedules": [
