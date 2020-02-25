@@ -1,7 +1,6 @@
 {
-  "user": 
-    "name": "Paweł"
-    
+  "user": {
+    "name": "Filip"
   },
   "recipes": [
     {

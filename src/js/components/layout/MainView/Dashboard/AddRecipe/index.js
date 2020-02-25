@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlusSquare } from "@fortawesome/free-solid-svg-icons";
+import {
+  faPlusSquare,
+  faEdit,
+  faTrashAlt
+} from "@fortawesome/free-solid-svg-icons";
 import { useForm } from "react-hook-form";
 import { addRecipe } from "../../../../../../redux/actions/recipes";
 import { useDispatch } from "react-redux";
@@ -84,6 +88,8 @@ const AddRecipe = () => {
     return (
       <li key={key} className="instructions-element">
         {formValues.steps[key]}
+        <FontAwesomeIcon className="icon-edit" icon={faEdit} />
+        <FontAwesomeIcon className="icon-delete" icon={faTrashAlt} />
       </li>
     );
   });
@@ -138,7 +144,7 @@ const AddRecipe = () => {
                 </label>
               </form>
               <FontAwesomeIcon
-                className="icon-1"
+                className="icon-plus"
                 icon={faPlusSquare}
                 onClick={() => addInstruction()}
               />

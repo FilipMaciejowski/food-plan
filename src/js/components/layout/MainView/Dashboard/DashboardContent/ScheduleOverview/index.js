@@ -1,5 +1,4 @@
 import React from "react";
-
 const ScheduleOverview = () => {
   return (
     <>
@@ -97,5 +96,4 @@ const ScheduleOverview = () => {
     </>
   );
 };
-
 export default ScheduleOverview;

@@ -1,4 +1,4 @@
-// DASHBOARD
+// DASHBOARD MAINVIEW
 
 .main__dashboard {
   width: 100vw;
@@ -7,17 +7,22 @@
 
 // NAVBAR
 .navbar__dashboard-container {
+  height: 12.5vh;
   background-color: $grey2;
-  padding: 0.5rem 2rem;
-  height: auto;
+  padding: 0.5rem .5rem;
+  display: flex;
+  align-items: center;
+  
   .navbar__dashboard-content {
     width: 100%;
     max-width: 100%;
+    height: 50%; 
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-left: 5px solid $grey2;
     border-right: 5px solid $grey2;
+
     a {
       display: inline-block;
       text-decoration: none;
@@ -60,13 +65,16 @@
 }
 
 // DASHBOARD
+
 .main__dashboard-container {
   width: 100%;
-  height: 85%;
+  height: 87.5vh;
   display: flex;
+  
 }
 
 //SIDEBAR
+
 .sidebar__nav-container {
   display: flex;
   width: 18.5%;
@@ -74,7 +82,7 @@
   background-color: $grey1;
 
   .sidebar-content {
-    height: 100%;
+    height: auto;
     width: 100%;
     position: relative;
     list-style: none;
@@ -121,12 +129,11 @@
 .main__dashboard-content {
   background-image: url("../../assets/images/background.png");
   width: 81.5%;
-}
-
-.dashboard__content {
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: auto;
 }
 
 .dashboard__content-top {
@@ -135,12 +142,7 @@
   margin: 2.25% auto;
   display: flex;
   justify-content: space-between;
-}
 
-.dashboard__content-bottom {
-  width: 100%;
-  height: auto;
-}
 
 // WIDGETSADD
 
@@ -249,15 +251,19 @@
   top: 2px;
   right: 3px;
 }
+}
 
 // SCHEDULE OVERVIEW
+
 .dashboard__content-bottom {
   width: 90%;
-  height: auto;
+  height: 70vh;
   margin: 0 auto;
   margin-top: 2.25%;
-  background-color: #fffffa;
-  border: 1px dashed #468966;
+  margin-bottom: 2.25%;
+  background-color: $white1;
+  border: 1px dashed $green1;
+  
 
   .schedule__overview-title {
     margin-top: 1rem;
@@ -270,26 +276,30 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 95%;
+    margin: 0 auto; 
+    
 
     .schedule__overview-content-day {
       display: flex;
       flex-direction: column;
-      margin-bottom: 2rem;
+     
 
       .schedule__overview-content-element-title {
-        width: 12rem;
-        margin-top: 1rem;
-        padding: 0.75rem 0;
+        width: auto;
+        height: auto;
+        margin-top: .5rem;
+        padding: .5rem 0;
         border-top: 0.0625rem solid $grey3;
         border-bottom: 0.0625rem solid $grey3;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         font-weight: bold;
         text-align: center;
         color: $grey2;
       }
       .schedule__overview-content-element {
         text-align: center;
-        padding: 0.75rem 0;
+        padding: 0.5rem 0;
         font-size: 1.25rem;
         color: $grey3;
         border-bottom: 0.0625rem solid $grey3;
@@ -302,12 +312,13 @@
   display: flex;
   justify-content: space-between;
   align-content: center;
-  margin-bottom: 1rem;
+  margin: 0 1rem 0 1rem;
 
   .schedule__overview-content-nav-element {
     display: flex;
     font-size: 0.875rem;
     color: $orange3;
+    margin: 1.5rem 0 1.5rem 0;
   }
 
   .prev {
@@ -338,12 +349,6 @@
   }
 }
 
-//ADD RECIPE MODAL
-
-.add__recipe__modal {
-  width: 75vw;
-  height: 75vh;
-}
 // USER FIRST ENTRY
 
 .dashboard__user__first__entry-container {
@@ -410,6 +415,7 @@
 }
 
 //ADD RECIPE
+
 
 .add__recipe__container {
   width: 100%;
@@ -497,6 +503,11 @@
         padding-bottom: 0.25rem;
         border-bottom: 2px solid $grey3;
       }
+
+      button{
+        cursor: pointer;
+      }
+
       .add__recipe__content-fill {
         width: 100%;
         height: auto;
@@ -524,6 +535,7 @@
           height: auto;
           align-self: flex-start;
           padding: 0 0;
+          cursor: pointer;
 
           path {
             width: 100%;
@@ -772,14 +784,16 @@ td:not(.cell-empty) {
   th{
     padding: .75rem 0 .75rem  0;
   }
-  
 }
 
 .table__header__cell-actions{
   text-align: center;
 }
 
-.recipes__content__table-cell{}
+
+.recipes__content__table-cell td{
+  padding: .5rem 0;
+}
 .recipes__content__table-cell td:not(:last-child) {
     text-align: left;
   }
@@ -795,17 +809,24 @@ td:not(.cell-empty) {
     font-weight: 400;
     color: $grey3;
  }
+
+ .recipes__content__table-cell td:last-child {
+    text-align: center;
+  }
+
+ 
 .recipes__content__table-cell td:nth-child(1){
 width: 5%;
 }
 .recipes__content__table-cell td:nth-child(2){
 width: 25%;
 }
-
 .recipes__content__table-cell td:nth-child(3){
 width: 45%;
 height: auto;
 }
+
+
 
 .recipes__content__table-cell td:nth-child(4){
 width: 10%;
