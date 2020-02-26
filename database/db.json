@@ -2,32 +2,7 @@
   "user": {
     "name": "Filip"
   },
-  "recipes": [
-    {
-      "name": "sdfsdffs",
-      "description": "sdfdsfsdfs",
-      "ingredients": {
-        "1": "nntnnyn"
-      },
-      "steps": {
-        "1": "vrvve"
-      },
-      "close": false,
-      "id": 1
-    },
-    {
-      "name": "feefeeffea",
-      "description": "afsasafafsafs",
-      "ingredients": {
-        "1": "asfasfassaf"
-      },
-      "steps": {
-        "1": "afsfsfsafsas"
-      },
-      "close": false,
-      "id": 2
-    }
-  ],
+  "recipes": [],
   "schedules": [
     {
       "id": 1,
