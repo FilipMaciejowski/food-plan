@@ -116,16 +116,18 @@ const AddRecipe = () => {
     return (
       <li key={key} className="ingridients-element">
         {formValues.ingredients[key]}
-        <FontAwesomeIcon
-          className="recipe__icon-edit"
-          icon={faEdit}
-          onClick={() => editIngredient(key)}
-        />
-        <FontAwesomeIcon
-          className="recipe__icon-delete"
-          icon={faTrashAlt}
-          onClick={() => deleteIngredient(key)}
-        />
+        <div className="icon-container">
+          <FontAwesomeIcon
+            className="recipe__icon-edit"
+            icon={faEdit}
+            onClick={() => editIngredient(key)}
+          />
+          <FontAwesomeIcon
+            className="recipe__icon-delete"
+            icon={faTrashAlt}
+            onClick={() => deleteIngredient(key)}
+          />
+        </div>
       </li>
     );
   });
@@ -134,16 +136,18 @@ const AddRecipe = () => {
     return (
       <li key={key} className="instructions-element">
         {formValues.steps[key]}
-        <FontAwesomeIcon
-          className="recipe__icon-edit"
-          icon={faEdit}
-          onClick={() => editInstruction(key)}
-        />
-        <FontAwesomeIcon
-          className="recipe__icon-delete"
-          icon={faTrashAlt}
-          onClick={() => deleteInstruction(key)}
-        />
+        <div className="icon-container">
+          <FontAwesomeIcon
+            className="recipe__icon-edit"
+            icon={faEdit}
+            onClick={() => editInstruction(key)}
+          />
+          <FontAwesomeIcon
+            className="recipe__icon-delete"
+            icon={faTrashAlt}
+            onClick={() => deleteInstruction(key)}
+          />
+        </div>
       </li>
     );
   });

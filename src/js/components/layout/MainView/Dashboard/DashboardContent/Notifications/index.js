@@ -11,26 +11,27 @@ recipesNumber();
 
 const recipesNumber = () => {
   let number = 0;
-  Object.keys(recipes).map((key) => 
+  Object.keys(recipes).map(key => 
   {
-    number ++;
+    return number ++;
   })
    setRecipeNumber(number);
 };
 
 
 const adjustEnding = (recipeNumber) => {
-  if(recipeNumber === '1'){
+  if (recipeNumber < "1" || recipeNumber > "4") {
+    return `Masz juz ${recipeNumber} przepisow`;
+  } else if(recipeNumber == "1") {
     return `Masz juz ${recipeNumber} przepis`;
-  }else if(recipeNumber < '1' || recipeNumber > "4"){
-    return `Masz juz ${recipeNumber} przepisow`; 
-  }else if(recipeNumber > "1" || recipeNumber <= '4'){
+  } else if (recipeNumber == "2") {
     return `Masz juz ${recipeNumber} przepisy`;
-  }
-
+  } else if (recipeNumber == "3") {
+    return `Masz juz ${recipeNumber} przepisy`;
+  }else if (recipeNumber == "4") {
+    return `Masz juz ${recipeNumber} przepisy`;
 }
-
-
+}
 
     return (
       <div className="notifications">
