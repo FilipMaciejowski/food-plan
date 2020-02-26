@@ -18,7 +18,6 @@ const recipesNumber = () => {
    setRecipeNumber(number);
 };
 
-
 const adjustEnding = (recipeNumber) => {
   if (recipeNumber < "1" || recipeNumber > "4") {
     return `Masz juz ${recipeNumber} przepisow`;
