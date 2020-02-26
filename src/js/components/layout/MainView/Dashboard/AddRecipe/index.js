@@ -117,12 +117,12 @@ const AddRecipe = () => {
       <li key={key} className="ingridients-element">
         {formValues.ingredients[key]}
         <FontAwesomeIcon
-          className="icon-edit"
+          className="recipe__icon-edit"
           icon={faEdit}
           onClick={() => editIngredient(key)}
         />
         <FontAwesomeIcon
-          className="icon-delete"
+          className="recipe__icon-delete"
           icon={faTrashAlt}
           onClick={() => deleteIngredient(key)}
         />
@@ -135,12 +135,12 @@ const AddRecipe = () => {
       <li key={key} className="instructions-element">
         {formValues.steps[key]}
         <FontAwesomeIcon
-          className="icon-edit"
+          className="recipe__icon-edit"
           icon={faEdit}
           onClick={() => editInstruction(key)}
         />
         <FontAwesomeIcon
-          className="icon-delete"
+          className="recipe__icon-delete"
           icon={faTrashAlt}
           onClick={() => deleteInstruction(key)}
         />
