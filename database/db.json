@@ -2,20 +2,7 @@
   "user": {
     "name": "Filip"
   },
-  "recipes": [
-    {
-      "name": "aaaaaaa",
-      "description": "vvvvv",
-      "ingredients": {
-        "1": "nnnnnn"
-      },
-      "steps": {
-        "1": "ffffff"
-      },
-      "close": false,
-      "id": 1
-    }
-  ],
+  "recipes": [],
   "schedules": [
     {
       "id": 1,
@@ -172,6 +159,226 @@
         "Zupa ogórkowa"
       ],
       "id": 5
+    },
+    {
+      "name": "sj nas fasfas",
+      "description": "ddsfsfssdfvds",
+      "weekNumber": "1",
+      "monday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "tuesday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "wednesday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "thrusday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "friday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "saturday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "sunday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "id": 6
+    },
+    {
+      "name": "sj nas fasfas",
+      "description": "ddsfsfssdfvds",
+      "weekNumber": "1",
+      "monday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "tuesday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "wednesday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "thrusday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "friday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "saturday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "sunday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "id": 7
+    },
+    {
+      "name": "sj nas fasfas",
+      "description": "ddsfsfssdfvds",
+      "weekNumber": "1",
+      "monday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "tuesday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "wednesday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "thrusday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "friday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "saturday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "sunday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "id": 8
+    },
+    {
+      "name": "sj nas fasfas",
+      "description": "ddsfsfssdfvds",
+      "weekNumber": "1",
+      "monday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "tuesday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "wednesday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "thrusday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "friday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "saturday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "sunday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "id": 9
     }
   ]
 }

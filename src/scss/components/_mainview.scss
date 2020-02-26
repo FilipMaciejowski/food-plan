@@ -9,14 +9,14 @@
 .navbar__dashboard-container {
   height: 12.5%;
   background-color: $grey2;
-  padding: .5rem .5rem;
+  padding: 0.5rem 0.5rem;
   display: flex;
   align-items: center;
-  
+
   .navbar__dashboard-content {
     width: 100%;
     max-width: 100%;
-    height: 50%; 
+    height: 50%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -70,7 +70,6 @@
   width: 100%;
   height: 87.5%;
   display: flex;
-  
 }
 
 //SIDEBAR
@@ -143,114 +142,113 @@
   display: flex;
   justify-content: space-between;
 
+  // WIDGETSADD
 
-// WIDGETSADD
+  .widgets__container {
+    display: flex;
+    height: auto;
+    width: auto;
+  }
 
-.widgets__container {
-  display: flex;
-  height: auto;
-  width: auto;
-}
-
-.link__add {
-  width: 14rem;
-  display: flex;
-  height: 12.5rem;
-  background-color: $white1;
-  border: 1px dashed $widgetGreen;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  margin-right: 5%;
-
-  .widget__element__container {
+  .link__add {
+    width: 14rem;
+    display: flex;
+    height: 12.5rem;
+    background-color: $white1;
+    border: 1px dashed $widgetGreen;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transform: translateY(-7.25%);
-    .widget__text {
-      text-align: center;
-      p {
-        font-size: 1.25rem;
-        color: $widgetGreen;
+    text-decoration: none;
+    margin-right: 5%;
+
+    .widget__element__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transform: translateY(-7.25%);
+      .widget__text {
+        text-align: center;
+        p {
+          font-size: 1.25rem;
+          color: $widgetGreen;
+        }
+      }
+      .ng-element-plus {
+        cursor: pointer;
+        width: 1rem;
+        height: 1rem;
       }
     }
-    .ng-element-plus {
-      cursor: pointer;
-      width: 1rem;
-      height: 1rem;
+  }
+
+  // NOTIFICATIONS
+
+  .notifications {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+    order: 2;
+  }
+
+  .notifications__element__1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border: 1px solid $notificationsBlue;
+    border-style: dashed;
+    display: flex;
+
+    div p {
+      color: $notificationsBlue;
+      font-size: 1.25rem;
     }
   }
-}
 
-// NOTIFICATIONS
+  .notifications__element__2 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border: 1px dashed $notificationsYellow;
+    display: flex;
 
-.notifications {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: auto;
-  width: 100%;
-  order: 2;
-}
-
-.notifications__element__1 {
-  position: relative;
-  width: 100%;
-  height: auto;
-  border: 1px solid $notificationsBlue;
-  border-style: dashed;
-  display: flex;
-
-  div p {
-    color: $notificationsBlue;
-    font-size: 1.25rem;
+    div p {
+      color: $notificationsYellow;
+      font-size: 1.25rem;
+    }
   }
-}
+  .notifications__element__3 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border: 1px dashed $notificationGreen;
+    display: flex;
 
-.notifications__element__2 {
-  position: relative;
-  width: 100%;
-  height: auto;
-  border: 1px dashed $notificationsYellow;
-  display: flex;
-
-  div p {
-    color: $notificationsYellow;
-    font-size: 1.25rem;
+    div p {
+      color: $notificationGreen;
+      font-size: 1.25rem;
+    }
   }
-}
-.notifications__element__3 {
-  position: relative;
-  width: 100%;
-  height: auto;
-  border: 1px dashed $notificationGreen;
-  display: flex;
-
-  div p {
-    color: $notificationGreen;
-    font-size: 1.25rem;
+  .notification__element__text {
+    display: flex;
+    align-items: center;
+    p {
+      color: $notificationsBlue;
+      font-size: 1.25rem;
+    }
   }
-}
-.notification__element__text {
-  display: flex;
-  align-items: center;
-  p {
-    color: $notificationsBlue;
-    font-size: 1.25rem;
-  }
-}
 
-.ng-element {
-  cursor: pointer;
-  position: absolute;
-  top: 2px;
-  right: 3px;
-}
+  .ng-element {
+    cursor: pointer;
+    position: absolute;
+    top: 2px;
+    right: 3px;
+  }
 }
 
 // SCHEDULE OVERVIEW
@@ -263,7 +261,6 @@
   margin-bottom: 2.25%;
   background-color: $white1;
   border: 1px dashed $green1;
-  
 
   .schedule__overview-title {
     margin-top: 1rem;
@@ -277,19 +274,17 @@
     justify-content: center;
     align-items: center;
     width: 95%;
-    margin: 0 auto; 
-    
+    margin: 0 auto;
 
     .schedule__overview-content-day {
       display: flex;
       flex-direction: column;
-     
 
       .schedule__overview-content-element-title {
         width: auto;
         height: auto;
-        margin-top: .5rem;
-        padding: .5rem 0;
+        margin-top: 0.5rem;
+        padding: 0.5rem 0;
         border-top: 0.0625rem solid $grey3;
         border-bottom: 0.0625rem solid $grey3;
         font-size: 1.25rem;
@@ -416,7 +411,6 @@
 
 //ADD RECIPE
 
-
 .add__recipe__container {
   width: 100%;
   height: 100%;
@@ -505,7 +499,7 @@
         border-bottom: 2px solid $grey3;
       }
 
-      button{
+      button {
         cursor: pointer;
       }
 
@@ -532,7 +526,7 @@
           }
         }
         svg {
-          width: 5%;
+          width: 7.5%;
           height: auto;
           align-self: flex-start;
           padding: 0 0;
@@ -558,8 +552,15 @@
     li {
       display: block;
       font-family: $main-font;
-      font-family: $main-font;
       color: $grey1;
+      .recipe__icon-edit {
+        width: 7.5%;
+        height: auto;
+        cursor: pointer;
+        path{
+          fill: $orange1;
+        }
+      }
     }
     li:before {
       content: counters(item, ".") ". ";
@@ -579,6 +580,11 @@
     li {
       font-family: $main-font;
       color: $grey1;
+      .recipe__icon-delete {
+        width: 7.5%;
+        height: auto;
+        cursor: pointer;
+      }
     }
   }
 }
@@ -618,7 +624,7 @@
   button {
     background-color: $orange3;
     padding: 0 0.5rem 0 0.5rem;
-
+    cursor: pointer;
     border: none;
     color: $white2;
     font-size: 1rem;
@@ -718,10 +724,9 @@ td:not(.cell-empty) {
   border-top: 2px solid $grey3;
 }
 
-
 .recipes__content-container {
   height: 100%;
-  width: 1005;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -740,11 +745,11 @@ td:not(.cell-empty) {
     width: 100%;
     height: auto;
     border-bottom: 2px solid $grey3;
-    padding-bottom: .25rem;
+    padding-bottom: 0.25rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: .75rem;
+    margin-bottom: 0.75rem;
     h1 {
       text-transform: uppercase;
       color: $orange3;
@@ -753,13 +758,17 @@ td:not(.cell-empty) {
       font-size: 1.75rem;
       margin: 0 0;
     }
-    svg {
-      width: 3%;
-      height: auto;
-      align-self: flex-start;
-      padding: 0 0;
+    a {
+      display: flex;
+      justify-content: flex-end;
       align-self: center;
+      padding: 0 0;
       cursor: pointer;
+
+      svg {
+        width: 7.5%;
+        height: auto;
+      }
 
       path {
         width: 100%;
@@ -770,97 +779,94 @@ td:not(.cell-empty) {
   }
 }
 
- .recipes__content__table{
-   width: 97.5%;
-   height: auto;
-   margin: 0 auto;
+.recipes__content__table {
+  width: 97.5%;
+  height: auto;
+  margin: 0 auto;
 
-.recipes__content__table-header{
-  text-transform: uppercase;
-  border-collapse: collapse;
-  text-align: left;
-  font-size: 1.25rem;
-  width: 100%;
-  height:auto;
-  th{
-    padding: .75rem 0 .75rem  0;
-  }
-}
-
-.table__header__cell-actions{
-  text-align: center;
-}
-
-
-.recipes__content__table-cell td{
-  padding: .5rem 0;
-}
-.recipes__content__table-cell td:not(:last-child) {
+  .recipes__content__table-header {
+    text-transform: uppercase;
+    border-collapse: collapse;
     text-align: left;
-  }
-  .recipes__content__table-cell td:not(:nth-child(3)){
-    font-size: 1rem;
-    text-transform:lowercase;
-    font-weight: 400;
-    color: $grey3;
-  }
-  .recipes__content__table-cell td:nth-child(3){
-    font-size: .75rem;
-    text-transform:lowercase;
-    font-weight: 400;
-    color: $grey3;
- }
+    font-size: 1.25rem;
+    width: 100%;
+    height: auto;
 
- .recipes__content__table-cell td:last-child {
+    th {
+      padding: 0.75rem 0 0.75rem 0;
+    }
+  }
+
+  .table__header__cell-actions {
     text-align: center;
   }
 
- 
-.recipes__content__table-cell td:nth-child(1){
-width: 5%;
-}
-.recipes__content__table-cell td:nth-child(2){
-width: 25%;
-}
-.recipes__content__table-cell td:nth-child(3){
-width: 45%;
-height: auto;
-}
+  tr.recipes__content__table-cell {
+    border-bottom: 1px solid $grey3;
+    border-top: 1px solid $grey3;
+  }
+  td {
+    padding: 0.5rem 0;
+  }
 
+  .recipes__content__table-cell td:not(:last-child) {
+    text-align: left;
+  }
+  .recipes__content__table-cell td:not(:nth-child(3)) {
+    font-size: 1rem;
+    text-transform: lowercase;
+    font-weight: 400;
+    color: $grey3;
+  }
+  .recipes__content__table-cell td:nth-child(3) {
+    font-size: 0.75rem;
+    text-transform: lowercase;
+    font-weight: 400;
+    color: $grey3;
+  }
 
+  .recipes__content__table-cell td:last-child {
+    text-align: center;
+  }
 
-.recipes__content__table-cell td:nth-child(4){
-width: 10%;
-height: auto;
-}
+  .recipes__content__table-cell td:nth-child(1) {
+    width: 5%;
+  }
+  .recipes__content__table-cell td:nth-child(2) {
+    width: 25%;
+  }
+  .recipes__content__table-cell td:nth-child(3) {
+    width: 45%;
+    height: auto;
+  }
+  .recipes__content__table-cell td:nth-child(4) {
+    width: 10%;
+    height: auto;
+  }
 
-.icon-edit{
-      width: 20%;
-      height: auto;
-      align-self: flex-start;
-      cursor: pointer;
-      margin-right: .5rem;
+  .icon-edit {
+    width: 20%;
+    height: auto;
+    align-self: flex-start;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    path {
+      width: 100%;
+      height: 100%;
+      fill: $orange1;
+    }
+  }
 
-      path {
-        width: 100%;
-        height: 100%;
-        fill: $orange1;
-      }
-}
-
-.icon-delete{
-      width: 15%;
-      height: auto;
-      align-self: flex-start;
-      cursor: pointer;
-      margin-left: .5rem;
-
-
-      path {
-        width: 100%;
-        height: 100%;
-        fill: $green1;
-      }
-}
-
+  .icon-delete {
+    width: 15%;
+    height: auto;
+    align-self: flex-start;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    path {
+      width: 100%;
+      height: 100%;
+      fill: $green1;
+    }
+  }
 }

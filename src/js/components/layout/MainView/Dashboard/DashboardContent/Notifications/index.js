@@ -2,9 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useSelector} from "react-redux";
 
 
-  
- 
-
 const Notifications = () => {
 const [recipeNumber, setRecipeNumber] = useState(0);
 const recipes = useSelector(state => state.recipes);
@@ -19,7 +16,21 @@ const recipesNumber = () => {
     number ++;
   })
    setRecipeNumber(number);
+};
+
+
+const adjustEnding = (recipeNumber) => {
+  if(recipeNumber === '1'){
+    return `Masz juz ${recipeNumber} przepis`;
+  }else if(recipeNumber < '1' || recipeNumber > "4"){
+    return `Masz juz ${recipeNumber} przepisow`; 
+  }else if(recipeNumber > "1" || recipeNumber <= '4'){
+    return `Masz juz ${recipeNumber} przepisy`;
+  }
+
 }
+
+
 
     return (
       <div className="notifications">
@@ -46,7 +57,7 @@ const recipesNumber = () => {
             </g>
           </svg>
           <div className="notification__element__text">
-            <p>{`Masz już ${recipeNumber} przepisów, nieźle!`}</p>
+            <p>{adjustEnding(recipeNumber)}</p>
           </div>
           <svg
             version="1.2"

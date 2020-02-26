@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link} from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { getRecipes, recipeDelete, recipeEdit } from "../../../../../redux/actions/recipes";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -26,8 +27,10 @@ const Recipes = () => {
     <div className="recipes__content-container">
       <div className="recipes__content__view">
         <div className="recipes__content__view-header">
-          <h1>list of the recipes</h1>
-          <FontAwesomeIcon className="icon-plus" icon={faPlusSquare} />
+          <h1>list of recipes</h1>
+          <Link to="/foodplan/recipes/add" className="icon-plus">
+            <FontAwesomeIcon className="recipes-icon-plus" icon={faPlusSquare} />
+          </Link>
         </div>
         <table className="recipes__content__table">
           <tr className="recipes__content__table-header">
@@ -42,8 +45,16 @@ const Recipes = () => {
               <td>{recipe.name}</td>
               <td>{recipe.description}</td>
               <td>
-                <FontAwesomeIcon className="icon-edit" icon={faEdit} onClick={() => editRecipe(recipe)}/>
-                <FontAwesomeIcon className="icon-delete" icon={faTrashAlt} onClick={()=>dispatch(recipeDelete(recipe.id))}/>
+                <FontAwesomeIcon
+                  className="icon-edit"
+                  icon={faEdit}
+                  onClick={() => editRecipe(recipe)}
+                />
+                <FontAwesomeIcon
+                  className="icon-delete"
+                  icon={faTrashAlt}
+                  onClick={() => dispatch(recipeDelete(recipe.id))}
+                />
               </td>
             </tr>
           ))}
