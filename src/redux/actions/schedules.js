@@ -1,16 +1,37 @@
 import axios from "axios";
 
-export const ADD_SCHEDULE = "ADD_SCHEDULE";
-export const SCHEDULE_FETCHED = "SCHEDULE_FETCHED";
+const ADD_SCHEDULE = "ADD_SCHEDULE";
+const SCHEDULE_FETCHED = "SCHEDULE_FETCHED";
+const SCHEDULES_FETCHED = "SCHEDULES_FETCHED";
 
-export const scheduleFetched = schedule => ({
+const scheduleFetched = schedule => ({
   type: SCHEDULE_FETCHED,
   payload: schedule
 });
 
+const schedulesFetched = schedules => ({
+  type: SCHEDULES_FETCHED,
+  payload: schedules
+});
 
-export const addSchedule = schedule => dispatch => {
+const getSchedules = () => dispatch => {
   axios
-  .post("http://localhost:3000/schedules", schedule)
-  .then(res => dispatch(scheduleFetched(res.data)))
-}
+    .get("http://localhost:3000/schedules")
+    .then(res => dispatch(schedulesFetched(res.data)));
+};
+
+const addSchedule = schedule => dispatch => {
+  axios
+    .post("http://localhost:3000/schedules", schedule)
+    .then(res => dispatch(scheduleFetched(res.data)));
+};
+
+export {
+  ADD_SCHEDULE,
+  SCHEDULE_FETCHED,
+  SCHEDULES_FETCHED,
+  scheduleFetched,
+  schedulesFetched,
+  getSchedules,
+  addSchedule
+};
