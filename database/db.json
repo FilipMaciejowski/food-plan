@@ -2,32 +2,7 @@
   "user": {
     "name": "magnus"
   },
-  "recipes": [
-    {
-      "name": "rrrrr",
-      "description": "rrrrrr",
-      "ingredients": {
-        "1": "rrrrrr"
-      },
-      "steps": {
-        "1": "rrrrrr"
-      },
-      "close": false,
-      "id": 1
-    },
-    {
-      "name": "eeeee",
-      "description": "eeeeee",
-      "ingredients": {
-        "1": "eeeeee"
-      },
-      "steps": {
-        "1": "eeeeee"
-      },
-      "close": false,
-      "id": 2
-    }
-  ],
+  "recipes": [],
   "schedules": [
     {
       "name": "pppppp",
