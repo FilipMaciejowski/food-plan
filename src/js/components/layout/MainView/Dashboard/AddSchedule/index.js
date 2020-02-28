@@ -3,16 +3,14 @@ import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {addSchedule} from "../../../../../../redux/actions/schedules";
 import { getRecipes } from "../../../../../../redux/actions/recipes";
-
-
-
+import { useHistory } from 'react-router-dom'
 
 
 
 const AddSchedule = () => {
 
-
-  const [name, setName] = useState("");
+const history = useHistory();
+const [name, setName] = useState("");
 const [description, setDescription] = useState("");
 const [number, setNumber] = useState("");
 
@@ -60,11 +58,59 @@ const [sundaySupper, setSundaySupper] = useState("");
 
 const dispatch = useDispatch();
 const recipes = useSelector(state => state.recipes);
+
 useEffect(() => {
   dispatch(getRecipes());
 }, []);
 
+useEffect(() => {
+  if (recipes.length) {
+    setMondayBreakfast(recipes[0].name);
+    setMondaySecondBreakfast(recipes[0].name);
+    setMondaySoup(recipes[0].name);
+    setMondayLunch(recipes[0].name);
+    setMondaySupper(recipes[0].name);
+
+    setTuesdayBreakfast(recipes[0].name);
+    setTuesdaySecondBreakfast(recipes[0].name);
+    setTuesdaySoup(recipes[0].name);
+    setTuesdayLunch(recipes[0].name);
+    setTuesdaySupper(recipes[0].name);
+
+    setWednesdayBreakfast(recipes[0].name);
+    setWednesdaySecondBreakfast(recipes[0].name);
+    setWednesdaySoup(recipes[0].name);
+    setWednesdayLunch(recipes[0].name);
+    setWednesdaySupper(recipes[0].name);
+
+    setThrusdayBreakfast(recipes[0].name);
+    setThrusdaySecondBreakfast(recipes[0].name);
+    setThrusdaySoup(recipes[0].name);
+    setThrusdayLunch(recipes[0].name);
+    setThrusdaySupper(recipes[0].name);
+
+    setFridayBreakfast(recipes[0].name);
+    setFridaySecondBreakfast(recipes[0].name);
+    setFridaySoup(recipes[0].name);
+    setFridayLunch(recipes[0].name);
+    setFridaySupper(recipes[0].name);
+
+    setSaturdayBreakfast(recipes[0].name);
+    setSaturdaySecondBreakfast(recipes[0].name);
+    setSaturdaySoup(recipes[0].name);
+    setSaturdayLunch(recipes[0].name);
+    setSaturdaySupper(recipes[0].name);
+
+    setSundayBreakfast(recipes[0].name);
+    setSundaySecondBreakfast(recipes[0].name);
+    setSundaySoup(recipes[0].name);
+    setSundayLunch(recipes[0].name);
+    setSundaySupper(recipes[0].name);
+  }
+}, [recipes]);
+
  const handleSubmit = (e) => {
+   
    e.preventDefault();
    if(name!=="" && description !== "" && number !== "") {
      const newSchedule = {
@@ -80,15 +126,11 @@ useEffect(() => {
        sunday: [sundayBreakfast, sundaySecondBreakfast, sundaySoup, sundayLunch, sundaySupper]
      }
      dispatch(addSchedule(newSchedule));
-     console.log(mondayBreakfast);
+     history.push("/foodplan/dashboard");
    }
  }
 
-  const onSubmit = (e) =>{
-    e.preventdefault();
-  }
-
-
+  
   return (
     <div className="add__schedule__container">
       <div className="add__schedule__header">
@@ -97,7 +139,7 @@ useEffect(() => {
       </div>
 
       <div className="add__schedule__input">
-        <form onSubmit={e => onSubmit}>
+        <form>
           <label>
             Schedules name
             <input
