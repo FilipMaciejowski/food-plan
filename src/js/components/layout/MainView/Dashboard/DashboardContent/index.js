@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import WidgetsAdd from "./WidgetsAdd";
 import Notifications from "./Notifications";
 import ScheduleOverview from "./ScheduleOverview";
+import { getSchedules } from "../../../../../../redux/actions/schedules";
+import { useDispatch, useSelector } from "react-redux";
 
 const DashboardContent = () => {
+  const schedules = useSelector(state => state.schedules.schedules);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getSchedules());
+  }, []);
+
   return (
     <>
     
@@ -13,7 +21,9 @@ const DashboardContent = () => {
         <WidgetsAdd />
       </div>
       <div className="dashboard__content-bottom">
-        <ScheduleOverview />
+        <ScheduleOverview
+          schedules={schedules}
+        />
       </div>
     </>
   );

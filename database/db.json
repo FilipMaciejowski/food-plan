@@ -1,71 +1,138 @@
 {
   "user": {
-    "name": "Filip"
+    "name": "magnus"
   },
-  "recipes": [],
-  "schedules": [
+  "recipes": [
     {
-      "id": 1,
-      "name": "Wegetariański tydzień",
-      "description": "Długi opis tygodnia bez mięsa.",
-      "weekNumber": 1,
-      "monday": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "tuesday": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "wednesday": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "thrusday": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "friday": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "satruday": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "sunday": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ]
+      "name": "rrrrr",
+      "description": "rrrrrr",
+      "ingredients": {
+        "1": "rrrrrr"
+      },
+      "steps": {
+        "1": "rrrrrr"
+      },
+      "close": false,
+      "id": 1
     },
     {
-      "name": "Test",
-      "description": "Test",
-      "weekNumber": "1",
+      "name": "eeeee",
+      "description": "eeeeee",
+      "ingredients": {
+        "1": "eeeeee"
+      },
+      "steps": {
+        "1": "eeeeee"
+      },
+      "close": false,
+      "id": 2
+    }
+  ],
+  "schedules": [
+    {
+      "name": "pppppp",
+      "description": "pppppp",
+      "weekNumber": "9",
       "monday": [
-        "Zupa ogórkowa",
-        "Zupa pomidorowa",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "tuesday": [
+        "",
+        "eeeee",
+        "eeeee",
+        "eeeee",
+        ""
+      ],
+      "wednesday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "thrusday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "friday": [
+        "",
+        "eeeee",
+        "",
+        "",
+        ""
+      ],
+      "saturday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "sunday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "id": 1
+    },
+    {
+      "name": "cccc",
+      "description": "cccc",
+      "weekNumber": "9",
+      "monday": [
+        "rrrrr",
+        "rrrrr",
+        "rrrrr",
+        "rrrrr",
+        "rrrrr"
+      ],
+      "tuesday": [
+        "rrrrr",
+        "rrrrr",
+        "rrrrr",
+        "rrrrr",
+        "rrrrr"
+      ],
+      "wednesday": [
+        "rrrrr",
+        "rrrrr",
+        "rrrrr",
+        "rrrrr",
+        "rrrrr"
+      ],
+      "thrusday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "friday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "saturday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "sunday": [
+        "",
+        "",
         "",
         "",
         ""
@@ -73,312 +140,114 @@
       "id": 2
     },
     {
-      "name": "Test",
-      "description": "Test",
-      "weekNumber": "2",
+      "name": "hhh",
+      "description": "hhhhh",
+      "weekNumber": "11",
       "monday": [
-        "Zupa ogórkowa",
-        "Zupa ogórkowa",
-        "Zupa pomidorowa",
-        "Zupa pomidorowa",
+        "rrrrr",
+        "rrrrr",
+        "rrrrr",
+        "rrrrr",
+        "rrrrr"
+      ],
+      "tuesday": [
+        "rrrrr",
+        "rrrrr",
+        "rrrrr",
+        "rrrrr",
+        "rrrrr"
+      ],
+      "wednesday": [
+        "rrrrr",
+        "rrrrr",
+        "rrrrr",
+        "rrrrr",
+        "rrrrr"
+      ],
+      "thrusday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "friday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "saturday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "sunday": [
+        "",
+        "",
+        "",
+        "",
         ""
       ],
       "id": 3
     },
     {
-      "name": "Test",
-      "description": "Test",
-      "weekNumber": "3",
+      "name": "ddd",
+      "description": "ddd",
+      "weekNumber": "9",
       "monday": [
-        "Zupa ogórkowa",
-        "Zupa ogórkowa",
-        "",
-        "Zupa pomidorowa",
-        "Zupa pomidorowa"
+        "rrrrr",
+        "rrrrr",
+        "rrrrr",
+        "rrrrr",
+        "rrrrr"
       ],
       "tuesday": [
-        "Zupa ogórkowa",
-        "Zupa ogórkowa",
-        "Zupa ogórkowa",
-        "Zupa ogórkowa",
-        "Zupa pomidorowa"
+        "rrrrr",
+        "rrrrr",
+        "rrrrr",
+        "rrrrr",
+        "rrrrr"
+      ],
+      "wednesday": [
+        "rrrrr",
+        "rrrrr",
+        "rrrrr",
+        "rrrrr",
+        "rrrrr"
+      ],
+      "thrusday": [
+        "rrrrr",
+        "rrrrr",
+        "rrrrr",
+        "rrrrr",
+        "rrrrr"
+      ],
+      "friday": [
+        "rrrrr",
+        "rrrrr",
+        "rrrrr",
+        "rrrrr",
+        "rrrrr"
+      ],
+      "saturday": [
+        "rrrrr",
+        "rrrrr",
+        "rrrrr",
+        "rrrrr",
+        "rrrrr"
+      ],
+      "sunday": [
+        "rrrrr",
+        "rrrrr",
+        "rrrrr",
+        "rrrrr",
+        "rrrrr"
       ],
       "id": 4
-    },
-    {
-      "name": "Test",
-      "description": "Test ostateczny",
-      "weekNumber": "5",
-      "monday": [
-        "Zupa pomidorowa",
-        "Zupa ogórkowa",
-        "Zupa pomidorowa",
-        "Zupa pomidorowa",
-        "Zupa ogórkowa"
-      ],
-      "tuesday": [
-        "Zupa pomidorowa",
-        "Zupa pomidorowa",
-        "Zupa ogórkowa",
-        "Zupa ogórkowa",
-        "Zupa ogórkowa"
-      ],
-      "wednesday": [
-        "Zupa ogórkowa",
-        "Zupa ogórkowa",
-        "Zupa ogórkowa",
-        "Zupa ogórkowa",
-        "Zupa ogórkowa"
-      ],
-      "thrusday": [
-        "Zupa ogórkowa",
-        "",
-        "Zupa ogórkowa",
-        "Zupa ogórkowa",
-        "Zupa ogórkowa"
-      ],
-      "friday": [
-        "Zupa ogórkowa",
-        "Zupa ogórkowa",
-        "Zupa ogórkowa",
-        "Zupa ogórkowa",
-        "Zupa ogórkowa"
-      ],
-      "saturday": [
-        "Zupa ogórkowa",
-        "Zupa ogórkowa",
-        "Zupa ogórkowa",
-        "Zupa ogórkowa",
-        "Zupa ogórkowa"
-      ],
-      "sunday": [
-        "Zupa ogórkowa",
-        "Zupa ogórkowa",
-        "Zupa ogórkowa",
-        "Zupa ogórkowa",
-        "Zupa ogórkowa"
-      ],
-      "id": 5
-    },
-    {
-      "name": "sj nas fasfas",
-      "description": "ddsfsfssdfvds",
-      "weekNumber": "1",
-      "monday": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "tuesday": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "wednesday": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "thrusday": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "friday": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "saturday": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "sunday": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "id": 6
-    },
-    {
-      "name": "sj nas fasfas",
-      "description": "ddsfsfssdfvds",
-      "weekNumber": "1",
-      "monday": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "tuesday": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "wednesday": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "thrusday": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "friday": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "saturday": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "sunday": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "id": 7
-    },
-    {
-      "name": "sj nas fasfas",
-      "description": "ddsfsfssdfvds",
-      "weekNumber": "1",
-      "monday": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "tuesday": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "wednesday": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "thrusday": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "friday": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "saturday": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "sunday": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "id": 8
-    },
-    {
-      "name": "sj nas fasfas",
-      "description": "ddsfsfssdfvds",
-      "weekNumber": "1",
-      "monday": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "tuesday": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "wednesday": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "thrusday": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "friday": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "saturday": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "sunday": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "id": 9
     }
   ]
 }
