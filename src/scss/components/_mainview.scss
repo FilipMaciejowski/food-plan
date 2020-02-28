@@ -1,4 +1,4 @@
-// DASHBOARD
+// DASHBOARD MAINVIEW
 
 .main__dashboard {
   width: 100vw;
@@ -7,17 +7,22 @@
 
 // NAVBAR
 .navbar__dashboard-container {
+  height: 12.5%;
   background-color: $grey2;
-  padding: 0.5rem 2rem;
-  height: auto;
+  padding: 0.5rem 0.5rem;
+  display: flex;
+  align-items: center;
+
   .navbar__dashboard-content {
     width: 100%;
     max-width: 100%;
+    height: 50%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-left: 5px solid $grey2;
     border-right: 5px solid $grey2;
+
     a {
       display: inline-block;
       text-decoration: none;
@@ -60,13 +65,15 @@
 }
 
 // DASHBOARD
+
 .main__dashboard-container {
   width: 100%;
-  height: 85%;
+  height: 87.5%;
   display: flex;
 }
 
 //SIDEBAR
+
 .sidebar__nav-container {
   display: flex;
   width: 18.5%;
@@ -74,7 +81,7 @@
   background-color: $grey1;
 
   .sidebar-content {
-    height: 100%;
+    height: auto;
     width: 100%;
     position: relative;
     list-style: none;
@@ -121,12 +128,11 @@
 .main__dashboard-content {
   background-image: url("../../assets/images/background.png");
   width: 81.5%;
-}
-
-.dashboard__content {
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: auto;
 }
 
 .dashboard__content-top {
@@ -135,119 +141,114 @@
   margin: 2.25% auto;
   display: flex;
   justify-content: space-between;
-}
 
-.dashboard__content-bottom {
-  width: 100%;
-  height: auto;
-}
+  // WIDGETSADD
 
-// WIDGETSADD
+  .widgets__container {
+    display: flex;
+    height: auto;
+    width: auto;
+  }
 
-.widgets__container {
-  display: flex;
-  height: auto;
-  width: auto;
-}
-
-.link__add {
-  width: 14rem;
-  display: flex;
-  height: 12.5rem;
-  background-color: $white1;
-  border: 1px dashed $widgetGreen;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  margin-right: 5%;
-
-  .widget__element__container {
+  .link__add {
+    width: 14rem;
+    display: flex;
+    height: 12.5rem;
+    background-color: $white1;
+    border: 1px dashed $widgetGreen;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transform: translateY(-7.25%);
-    .widget__text {
-      text-align: center;
-      p {
-        font-size: 1.25rem;
-        color: $widgetGreen;
+    text-decoration: none;
+    margin-right: 5%;
+
+    .widget__element__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transform: translateY(-7.25%);
+      .widget__text {
+        text-align: center;
+        p {
+          font-size: 1.25rem;
+          color: $widgetGreen;
+        }
+      }
+      .ng-element-plus {
+        cursor: pointer;
+        width: 1rem;
+        height: 1rem;
       }
     }
-    .ng-element-plus {
-      cursor: pointer;
-      width: 1rem;
-      height: 1rem;
+  }
+
+  // NOTIFICATIONS
+
+  .notifications {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+    order: 2;
+  }
+
+  .notifications__element__1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border: 1px solid $notificationsBlue;
+    border-style: dashed;
+    display: flex;
+
+    div p {
+      color: $notificationsBlue;
+      font-size: 1.25rem;
     }
   }
-}
 
-// NOTIFICATIONS
+  .notifications__element__2 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border: 1px dashed $notificationsYellow;
+    display: flex;
 
-.notifications {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: auto;
-  width: 100%;
-  order: 2;
-}
-
-.notifications__element__1 {
-  position: relative;
-  width: 100%;
-  height: auto;
-  border: 1px solid $notificationsBlue;
-  border-style: dashed;
-  display: flex;
-
-  div p {
-    color: $notificationsBlue;
-    font-size: 1.25rem;
+    div p {
+      color: $notificationsYellow;
+      font-size: 1.25rem;
+    }
   }
-}
+  .notifications__element__3 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border: 1px dashed $notificationGreen;
+    display: flex;
 
-.notifications__element__2 {
-  position: relative;
-  width: 100%;
-  height: auto;
-  border: 1px dashed $notificationsYellow;
-  display: flex;
-
-  div p {
-    color: $notificationsYellow;
-    font-size: 1.25rem;
+    div p {
+      color: $notificationGreen;
+      font-size: 1.25rem;
+    }
   }
-}
-.notifications__element__3 {
-  position: relative;
-  width: 100%;
-  height: auto;
-  border: 1px dashed $notificationGreen;
-  display: flex;
-
-  div p {
-    color: $notificationGreen;
-    font-size: 1.25rem;
+  .notification__element__text {
+    display: flex;
+    align-items: center;
+    p {
+      color: $notificationsBlue;
+      font-size: 1.25rem;
+    }
   }
-}
-.notification__element__text {
-  display: flex;
-  align-items: center;
-  p {
-    color: $notificationsBlue;
-    font-size: 1.25rem;
-  }
-}
 
-.ng-element {
-  cursor: pointer;
-  position: absolute;
-  top: 2px;
-  right: 3px;
+  .ng-element {
+    cursor: pointer;
+    position: absolute;
+    top: 2px;
+    right: 3px;
+  }
 }
 
 // SCHEDULE OVERVIEW
@@ -340,12 +341,6 @@
   }
 }
 
-//ADD RECIPE MODAL
-
-.add__recipe__modal {
-  width: 75vw;
-  height: 75vh;
-}
 // USER FIRST ENTRY
 
 .dashboard__user__first__entry-container {
@@ -442,6 +437,7 @@
     color: $white2;
     font-size: 1rem;
     font-family: $main-font;
+    cursor: pointer;
   }
 }
 
@@ -499,6 +495,11 @@
         padding-bottom: 0.25rem;
         border-bottom: 2px solid $grey3;
       }
+
+      button {
+        cursor: pointer;
+      }
+
       .add__recipe__content-fill {
         width: 100%;
         height: auto;
@@ -522,14 +523,14 @@
           }
         }
         svg {
-          width: 5%;
+          width: 4.5%;
           height: auto;
           align-self: flex-start;
-          padding: 0 0;
-
+          cursor: pointer;
+          /* position: absolute;
+          top: -.75%;
+          left: 100%; */
           path {
-            width: 100%;
-            height: 100%;
             fill: $widgetGreen;
           }
         }
@@ -547,13 +548,39 @@
     li {
       display: block;
       font-family: $main-font;
-      font-family: $main-font;
       color: $grey1;
+
+      .icon-container {
+        display: none;
+
+        .recipe__icon-edit {
+          margin: 0 0.5rem 0 1rem;
+          cursor: pointer;
+          path {
+            width: 5%;
+            height: auto;
+            fill: $orange1;
+          }
+        }
+
+        .recipe__icon-delete {
+          cursor: pointer;
+          path {
+            width: 5%;
+            height: auto;
+            fill: $green1;
+          }
+        }
+      }
+      &:hover .icon-container {
+        display: inline-block;
+      }
     }
-    li:before {
-      content: counters(item, ".") ". ";
-      counter-increment: item;
-    }
+  }
+
+  li:before {
+    content: counters(item, ".") ". ";
+    counter-increment: item;
   }
 }
 
@@ -568,6 +595,32 @@
     li {
       font-family: $main-font;
       color: $grey1;
+
+      .icon-container {
+        display: none;
+
+        .recipe__icon-edit {
+          margin: 0 0.5rem 0 1rem;
+          cursor: pointer;
+          path {
+            width: 5%;
+            height: auto;
+            fill: $orange1;
+          }
+        }
+
+        .recipe__icon-delete {
+          cursor: pointer;
+          path {
+            width: 5%;
+            height: auto;
+            fill: $green1;
+          }
+        }
+      }
+      &:hover .icon-container {
+        display: inline-block;
+      }
     }
   }
 }
@@ -607,7 +660,7 @@
   button {
     background-color: $orange3;
     padding: 0 0.5rem 0 0.5rem;
-
+    cursor: pointer;
     border: none;
     color: $white2;
     font-size: 1rem;
@@ -709,7 +762,7 @@ td:not(.cell-empty) {
 
 .recipes__content-container {
   height: 100%;
-  width: 1005;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -741,13 +794,17 @@ td:not(.cell-empty) {
       font-size: 1.75rem;
       margin: 0 0;
     }
-    svg {
-      width: 3%;
-      height: auto;
-      align-self: flex-start;
-      padding: 0 0;
+    a {
+      display: flex;
+      justify-content: flex-end;
       align-self: center;
+      padding: 0 0;
       cursor: pointer;
+
+      svg {
+        width: 7.5%;
+        height: auto;
+      }
 
       path {
         width: 100%;
@@ -779,8 +836,14 @@ td:not(.cell-empty) {
     text-align: center;
   }
 
-  .recipes__content__table-cell {
+  tr.recipes__content__table-cell {
+    border-bottom: 1px solid $grey3;
+    border-top: 1px solid $grey3;
   }
+  td {
+    padding: 0.5rem 0;
+  }
+
   .recipes__content__table-cell td:not(:last-child) {
     text-align: left;
   }
@@ -796,18 +859,21 @@ td:not(.cell-empty) {
     font-weight: 400;
     color: $grey3;
   }
+
+  .recipes__content__table-cell td:last-child {
+    text-align: center;
+  }
+
   .recipes__content__table-cell td:nth-child(1) {
     width: 5%;
   }
   .recipes__content__table-cell td:nth-child(2) {
     width: 25%;
   }
-
   .recipes__content__table-cell td:nth-child(3) {
     width: 45%;
     height: auto;
   }
-
   .recipes__content__table-cell td:nth-child(4) {
     width: 10%;
     height: auto;
@@ -819,7 +885,6 @@ td:not(.cell-empty) {
     align-self: flex-start;
     cursor: pointer;
     margin-right: 0.5rem;
-
     path {
       width: 100%;
       height: 100%;
@@ -833,7 +898,6 @@ td:not(.cell-empty) {
     align-self: flex-start;
     cursor: pointer;
     margin-left: 0.5rem;
-
     path {
       width: 100%;
       height: 100%;
