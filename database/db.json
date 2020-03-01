@@ -2,7 +2,20 @@
   "user": {
     "name": "magnus"
   },
-  "recipes": [],
+  "recipes": [
+    {
+      "name": "bvsvdsghbf s",
+      "description": "fsdssdvvdssdvsvd",
+      "ingredients": {
+        "1": "sjdbhsd hvds vdsh"
+      },
+      "steps": {
+        "1": "sddshds hgsd "
+      },
+      "close": false,
+      "id": 1
+    }
+  ],
   "schedules": [
     {
       "name": "pppppp",
@@ -223,6 +236,116 @@
         "rrrrr"
       ],
       "id": 4
+    },
+    {
+      "name": "hbasfsabfsabfsa",
+      "description": "b hf as fsah fs",
+      "weekNumber": "9",
+      "monday": [
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s"
+      ],
+      "tuesday": [
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s"
+      ],
+      "wednesday": [
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s"
+      ],
+      "thrusday": [
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s"
+      ],
+      "friday": [
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s"
+      ],
+      "saturday": [
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s"
+      ],
+      "sunday": [
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s"
+      ],
+      "id": 5
+    },
+    {
+      "name": "fdsfggssd",
+      "description": "gdsdgsdgs",
+      "weekNumber": "9",
+      "monday": [
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s"
+      ],
+      "tuesday": [
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s"
+      ],
+      "wednesday": [
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s"
+      ],
+      "thrusday": [
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s"
+      ],
+      "friday": [
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s"
+      ],
+      "saturday": [
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s"
+      ],
+      "sunday": [
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s",
+        "bvsvdsghbf s"
+      ],
+      "id": 6
     }
   ]
 }

@@ -31,7 +31,7 @@ class WidgetsAdd extends React.Component {
                 </g>
               </svg>
               <div className="widget__text">
-                <p>dodaj przepis</p>
+                <p>add recipe</p>
               </div>
             </div>
           </div>
@@ -62,7 +62,7 @@ class WidgetsAdd extends React.Component {
                 </g>
               </svg>
               <div className="widget__text">
-                <p>dodaj plan</p>
+                <p>add plan</p>
               </div>
             </div>
           </div>
