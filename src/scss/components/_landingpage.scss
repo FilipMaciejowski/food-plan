@@ -241,11 +241,13 @@
     top: 50%;
     left: 2%;
     transform: translateY(-75%);
+    outline: none;
   }
   .carousel__next-button {
     top: 50%;
     right: 2%;
     transform: translateY(-75%);
+    outline: none;
   }
   .carousel__slider {
     max-height: 100%;
