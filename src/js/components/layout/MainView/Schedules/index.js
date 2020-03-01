@@ -24,7 +24,7 @@ const Schedules = () => {
      <div className="recipes__content-container">
       <div className="recipes__content__view">
         <div className="recipes__content__view-header">
-          <h1>list of recipes</h1>
+          <h1>list of schedules</h1>
           <Link to="/foodplan/schedules/add" className="icon-plus">
             <FontAwesomeIcon className="recipes-icon-plus" icon={faPlusSquare} />
           </Link>
