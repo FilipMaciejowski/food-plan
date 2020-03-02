@@ -2,41 +2,172 @@
   "user": {
     "name": "aaa"
   },
-  "recipes": [
-    {
-      "id": 1,
-      "name": "Zupa pomidorowa",
-      "description": "Pyszna zupa pomidorowa z całych pomidorów.",
-      "steps": ["Wlej wodę do garnka"],
-      "ingredients": ["Pomidory"]
-    }
-  ],
+  "recipes": [],
   "schedules": [
     {
       "id": 1,
       "name": "Wegetariański tydzień",
       "description": "Długi opis tygodnia bez mięsa.",
       "weekNumber": 9,
-      "monday": [1, 2, 3, 4, 5],
-      "tuesday": [1, 2, 3, 4, 5],
-      "wednesday": [1, 2, 3, 4, 5],
-      "thrusday": [1, 2, 3, 4, 5],
-      "friday": [1, 2, 3, 4, 5],
-      "satruday": [1, 2, 3, 4, 5],
-      "sunday": [1, 2, 3, 4, 5]
+      "monday": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "tuesday": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "wednesday": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "thrusday": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "friday": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "satruday": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sunday": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
     },
     {
       "id": 2,
       "name": "Wegetariański tydzień",
       "description": "Długi opis tygodnia bez mięsa.",
       "weekNumber": 10,
-      "monday": [1, 2, 3, 4, 5],
-      "tuesday": [1, 2, 3, 4, 5],
-      "wednesday": [1, 2, 3, 4, 5],
-      "thrusday": [1, 2, 3, 4, 5],
-      "friday": [1, 2, 3, 4, 5],
-      "satruday": [1, 2, 3, 4, 5],
-      "sunday": [1, 2, 3, 4, 5]
+      "monday": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "tuesday": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "wednesday": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "thrusday": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "friday": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "satruday": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sunday": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "name": "dddd",
+      "description": "dddd",
+      "weekNumber": "9",
+      "monday": [
+        "vdsd",
+        "vdsd",
+        "vdsd",
+        "vdsd",
+        "vdsd"
+      ],
+      "tuesday": [
+        "vdsd",
+        "vdsd",
+        "vdsd",
+        "vdsd",
+        "vdsd"
+      ],
+      "wednesday": [
+        "vdsd",
+        "vdsd",
+        "vdsd",
+        "vdsd",
+        "vdsd"
+      ],
+      "thrusday": [
+        "vdsd",
+        "vdsd",
+        "vdsd",
+        "vdsd",
+        "vdsd"
+      ],
+      "friday": [
+        "vdsd",
+        "vdsd",
+        "vdsd",
+        "vdsd",
+        "vdsd"
+      ],
+      "saturday": [
+        "vdsd",
+        "vdsd",
+        "vdsd",
+        "vdsd",
+        "vdsd"
+      ],
+      "sunday": [
+        "vdsd",
+        "vdsd",
+        "vdsd",
+        "vdsd",
+        "vdsd"
+      ],
+      "id": 3
     }
   ]
 }
