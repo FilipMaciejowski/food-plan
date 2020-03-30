@@ -1,11 +1,8 @@
-
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import {addSchedule} from "../../../../../../redux/actions/schedules";
+import { addSchedule } from "../../../../../../redux/actions/schedules";
 import { getRecipes } from "../../../../../../redux/actions/recipes";
 import { useHistory } from 'react-router-dom'
-
-
 
 const AddSchedule = () => {
 
@@ -32,11 +29,11 @@ const [wednesdaySoup, setWednesdaySoup] = useState("");
 const [wednesdayLunch, setWednesdayLunch] = useState("");
 const [wednesdaySupper, setWednesdaySupper] = useState("");
 
-const [thrusdayBreakfast, setThrusdayBreakfast] = useState("");
-const [thrusdaySecondBreakfast, setThrusdaySecondBreakfast] = useState("");
-const [thrusdaySoup, setThrusdaySoup] = useState("");
-const [thrusdayLunch, setThrusdayLunch] = useState("");
-const [thrusdaySupper, setThrusdaySupper] = useState("");
+const [thursdayBreakfast, setThursdayBreakfast] = useState("");
+const [thursdaySecondBreakfast, setThursdaySecondBreakfast] = useState("");
+const [thursdaySoup, setThursdaySoup] = useState("");
+const [thursdayLunch, setThursdayLunch] = useState("");
+const [thursdaySupper, setThursdaySupper] = useState("");
 
 const [fridayBreakfast, setFridayBreakfast] = useState("");
 const [fridaySecondBreakfast, setFridaySecondBreakfast] = useState("");
@@ -83,11 +80,11 @@ useEffect(() => {
     setWednesdayLunch(recipes[0].name);
     setWednesdaySupper(recipes[0].name);
 
-    setThrusdayBreakfast(recipes[0].name);
-    setThrusdaySecondBreakfast(recipes[0].name);
-    setThrusdaySoup(recipes[0].name);
-    setThrusdayLunch(recipes[0].name);
-    setThrusdaySupper(recipes[0].name);
+    setThursdayBreakfast(recipes[0].name);
+    setThursdaySecondBreakfast(recipes[0].name);
+    setThursdaySoup(recipes[0].name);
+    setThursdayLunch(recipes[0].name);
+    setThursdaySupper(recipes[0].name);
 
     setFridayBreakfast(recipes[0].name);
     setFridaySecondBreakfast(recipes[0].name);
@@ -110,7 +107,6 @@ useEffect(() => {
 }, [recipes]);
 
  const handleSubmit = (e) => {
-   
    e.preventDefault();
    if(name!=="" && description !== "" && number !== "") {
      const newSchedule = {
@@ -120,15 +116,15 @@ useEffect(() => {
        monday: [mondayBreakfast, mondaySecondBreakfast, mondaySoup, mondayLunch, mondaySupper],
        tuesday: [tuesdayBreakfast, tuesdaySecondBreakfast, tuesdaySoup, tuesdayLunch, tuesdaySupper],
        wednesday: [wednesdayBreakfast, wednesdaySecondBreakfast, wednesdaySoup, wednesdayLunch, wednesdaySupper],
-       thrusday: [thrusdayBreakfast, thrusdaySecondBreakfast, thrusdaySoup, thrusdayLunch, thrusdaySupper],
+       thursday: [thursdayBreakfast, thursdaySecondBreakfast, thursdaySoup, thursdayLunch, thursdaySupper],
        friday: [fridayBreakfast, fridaySecondBreakfast, fridaySoup, fridayLunch, fridaySupper],
        saturday: [saturdayBreakfast, saturdaySecondBreakfast, saturdaySoup, saturdayLunch, saturdaySupper],
        sunday: [sundayBreakfast, sundaySecondBreakfast, sundaySoup, sundayLunch, sundaySupper]
-     }
+     };
      dispatch(addSchedule(newSchedule));
      history.push("/foodplan/dashboard");
    }
- }
+ };
 
   
   return (
@@ -175,14 +171,14 @@ useEffect(() => {
       <table className="add__schedule-table">
         <tr className="add__schedule-table-row">
           <td className="cell-empty"></td>
-          <td>sniadanie</td>
-          <td>drugie sniadanie</td>
-          <td>zupa</td>
-          <td>drugie danie</td>
-          <td>kolacja</td>
+          <td>breakfast</td>
+          <td>brunch</td>
+          <td>soup</td>
+          <td>dinner</td>
+          <td>supper</td>
         </tr>
         <tr className="add__schedule-table-row">
-          <td>poniedzialek</td>
+          <td>monday</td>
           <td>
               <select  value={mondayBreakfast} onChange={e => setMondayBreakfast(e.target.value)}>
                {recipes.map((el, index) => {
@@ -220,7 +216,7 @@ useEffect(() => {
           </td>
         </tr>
         <tr className="add__schedule-table-row">
-          <td>wtorek</td>
+          <td>tuesday</td>
           <td>
               <select value={tuesdayBreakfast} onChange={e => setTuesdayBreakfast(e.target.value)}>
                {recipes.map((el, index) => {
@@ -258,7 +254,7 @@ useEffect(() => {
           </td>
         </tr>
         <tr className="add__schedule-table-row">
-          <td>sroda</td>
+          <td>wednesday</td>
           <td>
               <select value={wednesdayBreakfast} onChange={e => setWednesdayBreakfast(e.target.value)}>
                {recipes.map((el, index) => {
@@ -296,37 +292,37 @@ useEffect(() => {
           </td>
         </tr>
         <tr className="add__schedule-table-row">
-          <td>czwartek</td>
+          <td>thursday</td>
           <td>
-              <select value={thrusdayBreakfast} onChange={e => setThrusdayBreakfast(e.target.value)}>
+              <select value={thursdayBreakfast} onChange={e => setThursdayBreakfast(e.target.value)}>
                {recipes.map((el, index) => {
                  return <option key={index}>{el.name}</option>
                })}
              </select>
           </td>
           <td>
-              <select value={thrusdaySecondBreakfast} onChange={e => setMondaySecondBreakfast(e.target.value)}>
+              <select value={thursdaySecondBreakfast} onChange={e => setThursdaySecondBreakfast(e.target.value)}>
                {recipes.map((el, index) => {
                  return <option key={index}>{el.name}</option>
                })}
              </select>
           </td>
           <td>
-              <select value={thrusdaySoup} onChange={e => setThrusdaySoup(e.target.value)}>
+              <select value={thursdaySoup} onChange={e => setThursdaySoup(e.target.value)}>
                  {recipes.map((el, index) => {
                    return <option key={index}>{el.name}</option>
                  })}
              </select>
           </td>
           <td>
-              <select value={thrusdayLunch} onChange={e => setThrusdayLunch(e.target.value)}>
+              <select value={thursdayLunch} onChange={e => setThursdayLunch(e.target.value)}>
                  {recipes.map((el, index) => {
                    return <option key={index}>{el.name}</option>
                  })}
               </select>
           </td>
           <td>
-              <select value={thrusdaySupper} onChange={e => setThrusdaySupper(e.target.value)}>
+              <select value={thursdaySupper} onChange={e => setThursdaySupper(e.target.value)}>
                  {recipes.map((el, index) => {
                    return <option key={index}>{el.name}</option>
                  })}
@@ -334,7 +330,7 @@ useEffect(() => {
           </td>
         </tr>
         <tr className="add__schedule-table-row">
-          <td>piatek</td>
+          <td>friday</td>
           <td>
               <select value={fridayBreakfast} onChange={e => setFridayBreakfast(e.target.value)}>
                {recipes.map((el, index) => {
@@ -372,7 +368,7 @@ useEffect(() => {
           </td>
         </tr>
         <tr className="add__schedule-table-row">
-          <td>sobota</td>
+          <td>saturday</td>
           <td>
               <select value={saturdayBreakfast} onChange={e => setSaturdayBreakfast(e.target.value)}>
                {recipes.map((el, index) => {
@@ -410,7 +406,7 @@ useEffect(() => {
           </td>
         </tr>
         <tr className="add__schedule-table-row">
-          <td>niedziela</td>
+          <td>sunday</td>
           <td>
               <select value={sundayBreakfast} onChange={e => setSundayBreakfast(e.target.value)}>
                {recipes.map((el, index) => {

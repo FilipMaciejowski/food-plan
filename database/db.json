@@ -1,173 +1,76 @@
 {
   "user": {
-    "name": "aaa"
+    "name": "MAri"
   },
-  "recipes": [],
+  "recipes": [
+    {
+      "name": "rvvrv",
+      "description": "evvevevee",
+      "ingredients": {
+        "1": "evveveveve"
+      },
+      "steps": {
+        "1": "veveveveveve"
+      },
+      "close": false,
+      "id": 1
+    }
+  ],
   "schedules": [
     {
-      "id": 1,
-      "name": "Wegetariański tydzień",
-      "description": "Długi opis tygodnia bez mięsa.",
-      "weekNumber": 9,
+      "name": "evevev ev ev ",
+      "description": "e ve vevvveevve",
+      "weekNumber": "14",
       "monday": [
-        1,
-        2,
-        3,
-        4,
-        5
+        "rvvrv",
+        "rvvrv",
+        "rvvrv",
+        "rvvrv",
+        "rvvrv"
       ],
       "tuesday": [
-        1,
-        2,
-        3,
-        4,
-        5
+        "rvvrv",
+        "rvvrv",
+        "rvvrv",
+        "rvvrv",
+        "rvvrv"
       ],
       "wednesday": [
-        1,
-        2,
-        3,
-        4,
-        5
+        "rvvrv",
+        "rvvrv",
+        "rvvrv",
+        "rvvrv",
+        "rvvrv"
       ],
-      "thrusday": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "friday": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "satruday": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "sunday": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ]
-    },
-    {
-      "id": 2,
-      "name": "Wegetariański tydzień",
-      "description": "Długi opis tygodnia bez mięsa.",
-      "weekNumber": 10,
-      "monday": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "tuesday": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "wednesday": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "thrusday": [
-        1,
-        2,
-        3,
-        4,
-        5
+      "thursday": [
+        "rvvrv",
+        "rvvrv",
+        "rvvrv",
+        "rvvrv",
+        "rvvrv"
       ],
       "friday": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "satruday": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "sunday": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ]
-    },
-    {
-      "name": "dddd",
-      "description": "dddd",
-      "weekNumber": "9",
-      "monday": [
-        "vdsd",
-        "vdsd",
-        "vdsd",
-        "vdsd",
-        "vdsd"
-      ],
-      "tuesday": [
-        "vdsd",
-        "vdsd",
-        "vdsd",
-        "vdsd",
-        "vdsd"
-      ],
-      "wednesday": [
-        "vdsd",
-        "vdsd",
-        "vdsd",
-        "vdsd",
-        "vdsd"
-      ],
-      "thrusday": [
-        "vdsd",
-        "vdsd",
-        "vdsd",
-        "vdsd",
-        "vdsd"
-      ],
-      "friday": [
-        "vdsd",
-        "vdsd",
-        "vdsd",
-        "vdsd",
-        "vdsd"
+        "rvvrv",
+        "rvvrv",
+        "rvvrv",
+        "rvvrv",
+        "rvvrv"
       ],
       "saturday": [
-        "vdsd",
-        "vdsd",
-        "vdsd",
-        "vdsd",
-        "vdsd"
+        "rvvrv",
+        "rvvrv",
+        "rvvrv",
+        "rvvrv",
+        "rvvrv"
       ],
       "sunday": [
-        "vdsd",
-        "vdsd",
-        "vdsd",
-        "vdsd",
-        "vdsd"
+        "rvvrv",
+        "rvvrv",
+        "rvvrv",
+        "rvvrv",
+        "rvvrv"
       ],
-      "id": 3
+      "id": 1
     }
   ]
 }

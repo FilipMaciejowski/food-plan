@@ -15,8 +15,8 @@ const Recipes = () => {
   }, []);
 
   const editRecipe = (recipe) =>{
-    const editName=prompt("Plese, edit your name");
-    const editDescription=prompt("Please, edit description");
+    const editName = prompt("Plese, edit your name");
+    const editDescription = prompt("Please, edit description");
     let newData = Object.assign(recipe);
     newData.name = editName;
     newData.description = editDescription; 

@@ -1,6 +1,5 @@
 import axios from "axios";
 
-const ADD_SCHEDULE = "ADD_SCHEDULE";
 const SCHEDULE_FETCHED = "SCHEDULE_FETCHED";
 const SCHEDULES_FETCHED = "SCHEDULES_FETCHED";
 
@@ -15,9 +14,13 @@ const schedulesFetched = schedules => ({
 });
 
 const getSchedules = () => dispatch => {
-  axios
-    .get("http://localhost:3000/schedules")
-    .then(res => dispatch(schedulesFetched(res.data)));
+  return new Promise((resolve, reject) => {
+    axios
+      .get("http://localhost:3000/schedules")
+      .then(res => dispatch(schedulesFetched(res.data)))
+      .then(() => resolve())
+      .catch(() => reject())
+  })
 };
 
 const addSchedule = schedule => dispatch => {
@@ -26,12 +29,25 @@ const addSchedule = schedule => dispatch => {
     .then(res => dispatch(scheduleFetched(res.data)));
 };
 
+const scheduleDelete = id => dispatch => {
+  axios
+    .delete(`http://localhost:3000/schedules/${id}`)
+    .then(res => dispatch(getSchedules()));
+};
+
+const scheduleEdit = schedule => dispatch => {
+  axios
+    .put(`http://localhost:3000/schedules/${schedule.id}`, schedule)
+    .then(res => dispatch(getSchedules()));
+};
+
 export {
-  ADD_SCHEDULE,
   SCHEDULE_FETCHED,
   SCHEDULES_FETCHED,
   scheduleFetched,
   schedulesFetched,
   getSchedules,
-  addSchedule
+  addSchedule,
+  scheduleEdit,
+  scheduleDelete
 };

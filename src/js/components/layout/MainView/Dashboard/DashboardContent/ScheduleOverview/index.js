@@ -1,266 +1,152 @@
 import React, { Component } from "react";
-import dayjs from "dayjs";
 
-const weekOfYear = require("dayjs/plugin/weekOfYear");
-dayjs.extend(weekOfYear);
+const days = ['monday', 'tuesday', 'wednesday', 'thursday', 'saturday', 'sunday'];
 
 class ScheduleOverview extends Component {
+
   state = {
-    currentWeekIndex: null
+    currentWeekIndex: null,
+    weekIndex: null,
+    currentSchedule: null,
+    gotError: false,
   };
 
   componentDidMount() {
     const { getSchedules } = this.props;
-    getSchedules();
+    getSchedules().then(() => {
+      this.calculateCurrentWeek();
+      this.searchByWeekSchedules();
+    }).catch(() => {
+      this.setState({ gotError: true })
+    })
   }
 
-  componentDidUpdate() {
-    const { currentWeekIndex } = this.state;
-    if (currentWeekIndex === null) {
-      const currentWeek = dayjs(new Date()).week();
-
-      const { schedules } = this.props;
-
-      const index = schedules
-        .map(schedule => {
-          return schedule.weekNumber;
-        })
-        .indexOf(currentWeek);
-
-      if (index !== -1) {
-        this.setState({ currentWeekIndex: index });
-      } else {
-        if (schedules.length === 0) {
-          this.setState({ currentWeekIndex: null });
-        } else {
-          if (schedules.length === 1) {
-            this.setState({ currentWeekIndex: 0 });
-          } else {
-            const nextIndex = schedules
-              .map(schedule => {
-                return schedule.weekNumber;
-              })
-              .findIndex(index => {
-                return index > currentWeek;
-              });
-
-            if (nextIndex !== -1) {
-              this.setState({ currentWeekIndex: nextIndex });
-            }
-          }
-        }
-      }
-    }
+  calculateCurrentWeek() {
+    const today = new Date();
+    const firstDayOfYear = new Date(today.getFullYear(), 0, 1);
+    const pastDaysOfYear = (today - firstDayOfYear) / 86400000;
+    this.setState({
+      currentWeekIndex: Math.ceil((pastDaysOfYear + firstDayOfYear.getDay() + 1) / 7)
+    });
   }
 
   handleScheduleChange(direction) {
-    const { schedules } = this.props;
     const { currentWeekIndex } = this.state;
-
-    if (schedules.length === 1) {
-      return;
+    if (direction === "previous" && currentWeekIndex > 1) {
+      this.setState({
+        currentWeekIndex: currentWeekIndex - 1,
+      }, () => this.searchByWeekSchedules());
     }
 
-    if (direction === "previous") {
-      if (currentWeekIndex === 0) {
-        return;
-      } else {
-        if (typeof schedules[currentWeekIndex] - 1 === "undefined") {
-          return;
-        } else {
-          this.setState({ currentWeekIndex: currentWeekIndex - 1 });
-        }
-      }
+    if (direction === "next" && currentWeekIndex < 52) {
+      this.setState({
+        currentWeekIndex: currentWeekIndex + 1,
+      },() => this.searchByWeekSchedules());
     }
 
-    if (direction === "next") {
-      if (currentWeekIndex === schedules.length - 1) {
-        return;
-      } else {
-        if (typeof schedules[currentWeekIndex] + 1 === "undefined") {
-          return;
-        } else {
-          this.setState({ currentWeekIndex: currentWeekIndex + 1 });
+  }
+
+  searchByWeekSchedules() {
+    const { currentWeekIndex, currentSchedule } = this.state;
+    const { schedules } = this.props;
+    const setValueSchedules = value => {
+      this.setState({
+        currentSchedule: value,
+      },() => {console.log(currentSchedule, 'sss')})
+    };
+    if (schedules) {
+      let notFindSchedule = true;
+      schedules.forEach((schedule, index) => {
+        if (Number(schedule.weekNumber) === currentWeekIndex) {
+          setValueSchedules(schedules[index]);
+          notFindSchedule = false;
         }
+      });
+      if (notFindSchedule) {
+        setValueSchedules(null)
       }
+    } else {
+      setValueSchedules(null);
     }
   }
 
+  capitalize = word => {
+    if (typeof word !== 'string') return '';
+    return word.charAt(0).toUpperCase() + word.slice(1)
+  };
+
+  renderWeek(day) {
+    const { currentSchedule } = this.state;
+    const scheduleDay = currentSchedule[day];
+    return (
+      <>
+        {scheduleDay.map(element => (
+          <div className="schedule__overview-content-element">
+            {element}
+          </div>
+        ))}
+      </>
+    )
+  }
+
+  renderSchedule() {
+    return (
+      <>
+        {days.map(element => (
+          <div className="schedule__overview-content-day">
+            <div className="schedule__overview-content-element-title">
+              {this.capitalize(element)}
+            </div>
+            {this.renderWeek(element)}
+          </div>
+        ))}
+      </>
+    )
+  }
+
   render() {
-    const { schedules } = this.props;
-    const { currentWeekIndex } = this.state;
-
-    if (currentWeekIndex === null) {
-      return null;
-    } else {
-      const { currentWeekIndex } = this.state;
-
-      return (
-        <>
-          <div className="schedule__overview-title">
-            Twój plan na {schedules[currentWeekIndex].weekNumber} tydzień:
+    const { currentWeekIndex, currentSchedule, gotError } = this.state;
+    return (
+      <>
+        <div className="schedule__overview-title">
+          Your schedule for {currentWeekIndex} week:
+        </div>
+        {gotError
+          ?
+          <div className="schedule__overview-content-error">
+            Error occurred, pleas refresh page
           </div>
+          :
           <div className="schedule__overview-content-container">
-            <div className="schedule__overview-content-day">
-              <div className="schedule__overview-content-element-title">
-                Poniedziałek
+            { currentSchedule ?
+              <>
+                {this.renderSchedule()}
+              </>
+              :
+              <div className="schedule__overview-content-message">
+                You didn't add schedule for this week
               </div>
-              <div className="schedule__overview-content-element">
-                {schedules[currentWeekIndex].monday[0]}
-              </div>
-              <div className="schedule__overview-content-element">
-                {schedules[currentWeekIndex].monday[1]}
-              </div>
-              <div className="schedule__overview-content-element">
-                {schedules[currentWeekIndex].monday[2]}
-              </div>
-              <div className="schedule__overview-content-element">
-                {schedules[currentWeekIndex].monday[3]}
-              </div>
-              <div className="schedule__overview-content-element">
-                {schedules[currentWeekIndex].monday[4]}
-              </div>
-            </div>
-            <div className="schedule__overview-content-day">
-              <div className="schedule__overview-content-element-title">
-                Wtorek
-              </div>
-              <div className="schedule__overview-content-element">
-                {schedules[currentWeekIndex].tuesday[0]}
-              </div>
-              <div className="schedule__overview-content-element">
-                {schedules[currentWeekIndex].tuesday[1]}
-              </div>
-              <div className="schedule__overview-content-element">
-                {schedules[currentWeekIndex].tuesday[2]}
-              </div>
-              <div className="schedule__overview-content-element">
-                {schedules[currentWeekIndex].tuesday[3]}
-              </div>
-              <div className="schedule__overview-content-element">
-                {schedules[currentWeekIndex].tuesday[4]}
-              </div>
-            </div>
-            <div className="schedule__overview-content-day">
-              <div className="schedule__overview-content-element-title">
-                Środa
-              </div>
-              <div className="schedule__overview-content-element">
-                {schedules[currentWeekIndex].wednesday[0]}
-              </div>
-              <div className="schedule__overview-content-element">
-                {schedules[currentWeekIndex].wednesday[1]}
-              </div>
-              <div className="schedule__overview-content-element">
-                {schedules[currentWeekIndex].wednesday[2]}
-              </div>
-              <div className="schedule__overview-content-element">
-                {schedules[currentWeekIndex].wednesday[3]}
-              </div>
-              <div className="schedule__overview-content-element">
-                {schedules[currentWeekIndex].wednesday[4]}
-              </div>
-            </div>
-            <div className="schedule__overview-content-day">
-              <div className="schedule__overview-content-element-title">
-                Czwartek
-              </div>
-              <div className="schedule__overview-content-element">
-                {schedules[currentWeekIndex].thrusday[0]}
-              </div>
-              <div className="schedule__overview-content-element">
-                {schedules[currentWeekIndex].thrusday[1]}
-              </div>
-              <div className="schedule__overview-content-element">
-                {schedules[currentWeekIndex].thrusday[2]}
-              </div>
-              <div className="schedule__overview-content-element">
-                {schedules[currentWeekIndex].thrusday[3]}
-              </div>
-              <div className="schedule__overview-content-element">
-                {schedules[currentWeekIndex].thrusday[4]}
-              </div>
-            </div>
-            <div className="schedule__overview-content-day">
-              <div className="schedule__overview-content-element-title">
-                Piątek
-              </div>
-              <div className="schedule__overview-content-element">
-                {schedules[currentWeekIndex].friday[0]}
-              </div>
-              <div className="schedule__overview-content-element">
-                {schedules[currentWeekIndex].friday[1]}
-              </div>
-              <div className="schedule__overview-content-element">
-                {schedules[currentWeekIndex].friday[2]}
-              </div>
-              <div className="schedule__overview-content-element">
-                {schedules[currentWeekIndex].friday[3]}
-              </div>
-              <div className="schedule__overview-content-element">
-                {schedules[currentWeekIndex].friday[4]}
-              </div>
-            </div>
-            <div className="schedule__overview-content-day">
-              <div className="schedule__overview-content-element-title">
-                Sobota
-              </div>
-              <div className="schedule__overview-content-element">
-                {schedules[currentWeekIndex].satruday[0]}
-              </div>
-              <div className="schedule__overview-content-element">
-                {schedules[currentWeekIndex].satruday[1]}
-              </div>
-              <div className="schedule__overview-content-element">
-                {schedules[currentWeekIndex].satruday[2]}
-              </div>
-              <div className="schedule__overview-content-element">
-                {schedules[currentWeekIndex].satruday[3]}
-              </div>
-              <div className="schedule__overview-content-element">
-                {schedules[currentWeekIndex].satruday[4]}
-              </div>
-            </div>
-            <div className="schedule__overview-content-day">
-              <div className="schedule__overview-content-element-title">
-                Niedziela
-              </div>
-              <div className="schedule__overview-content-element">
-                {schedules[currentWeekIndex].sunday[0]}
-              </div>
-              <div className="schedule__overview-content-element">
-                {schedules[currentWeekIndex].sunday[1]}
-              </div>
-              <div className="schedule__overview-content-element">
-                {schedules[currentWeekIndex].sunday[2]}
-              </div>
-              <div className="schedule__overview-content-element">
-                {schedules[currentWeekIndex].sunday[3]}
-              </div>
-              <div className="schedule__overview-content-element">
-                {schedules[currentWeekIndex].sunday[4]}
-              </div>
-            </div>
+            }
           </div>
-          <div className="schedule__overview-content-nav">
-            <div
-              className="schedule__overview-content-nav-element prev"
-              onClick={() => this.handleScheduleChange("previous")}
-            >
-              <span>&laquo;</span>
-              <span>poprzedni</span>
-            </div>
-            <div
-              className="schedule__overview-content-nav-element next"
-              onClick={() => this.handleScheduleChange("next")}
-            >
-              <span>następny</span>
-              <span>&raquo;</span>
-            </div>
+        }
+        <div className="schedule__overview-content-nav">
+          <div
+            className="schedule__overview-content-nav-element prev"
+            onClick={() => this.handleScheduleChange("previous")}
+          >
+            <span>&laquo;</span>
+            <span className="schedule__overview-content-spanBtn">Previous week</span>
           </div>
-        </>
-      );
-    }
+          <div
+            className="schedule__overview-content-nav-element next"
+            onClick={() => this.handleScheduleChange("next")}
+          >
+            <span className="schedule__overview-content-spanBtn">Next week</span>
+            <span>&raquo;</span>
+          </div>
+        </div>
+      </>
+    );
   }
 }
 

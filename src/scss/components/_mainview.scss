@@ -24,7 +24,6 @@
     border-right: 5px solid $grey2;
 
     a {
-      display: inline-block;
       text-decoration: none;
       display: flex;
       width: auto;
@@ -94,12 +93,10 @@
       padding-top: 2.25rem;
       padding-bottom: 2.25rem;
       text-decoration: none;
-      font-size: 1.5rem;
       font-family: $main-font;
       font-weight: 100;
       color: $white1;
       font-size: 1.25rem;
-      font-family: $main-font;
       border-left: 5px solid $grey1;
       position: relative;
     }
@@ -152,7 +149,6 @@
 
   .link__add {
     width: 14rem;
-    display: flex;
     height: 12.5rem;
     background-color: $white1;
     border: 1px dashed $widgetGreen;
@@ -190,18 +186,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     height: auto;
     width: 100%;
     order: 2;
+    &>div:nth-child(-n+2) {
+      margin-bottom: 22px;
+    }
   }
 
   .notifications__element__1 {
     position: relative;
     width: 100%;
     height: auto;
-    border: 1px solid $notificationsBlue;
-    border-style: dashed;
+    border: 1px dashed $notificationsBlue;
     display: flex;
 
     div p {
@@ -252,11 +249,29 @@
 }
 
 // SCHEDULE OVERVIEW
+
+.schedule__overview-content-message {
+  min-height: 341px;
+  color: $orange1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.schedule__overview-content-error {
+  min-height: 306px;
+  color: $red2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
 .dashboard__content-bottom {
   width: 90%;
   height: auto;
-  margin: 0 auto;
-  margin-top: 2.25%;
+  margin: 2.25% auto 0;
   background-color: #fffffa;
   border: 1px dashed #468966;
 
@@ -304,11 +319,16 @@
   justify-content: space-between;
   align-content: center;
   margin-bottom: 1rem;
-
   .schedule__overview-content-nav-element {
     display: flex;
     font-size: 0.875rem;
     color: $orange3;
+    span {
+      user-select: none;
+    }
+    .schedule__overview-content-spanBtn {
+      margin-top: 5px;
+    }
   }
 
   .prev {
@@ -380,7 +400,6 @@
         margin-bottom: 1rem;
         width: 18.25rem;
         height: 1.875rem;
-        border: none;
         border: 0.0625rem solid $grey4;
         color: darken($grey2, 20%);
         &::placeholder {
@@ -706,7 +725,6 @@
       margin-bottom: 1.5rem;
       .schedule__week-input {
         display: flex;
-        justify-content: space-between;
         width: 3%;
         height: auto;
         color: $grey1;
@@ -714,7 +732,6 @@
         font-family: $main-font;
         padding: 0.25rem;
         border: 1px solid lighten($grey3, 15%);
-        display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;

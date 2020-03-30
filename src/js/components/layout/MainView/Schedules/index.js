@@ -8,21 +8,39 @@ import {
   faTrashAlt
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import { scheduleDelete, scheduleEdit } from "../../../../../redux/actions/schedules";
 
 const Schedules = () => {
   const dispatch = useDispatch();
-  /* const [schedules, setSchedulse] = useState(null); */
   const schedules = useSelector(state => state.schedules);
+  const [schedulesState, setSchedulesState] = useState(schedules);
 
   useEffect(() => {
     dispatch(getSchedules());
   }, []);
 
+  useEffect(() => {
+    setSchedulesState(schedules)
+  }, [schedules]);
+
+  const editSchedule = schedule => {
+    const editName = prompt("Plese, edit your name");
+    const editDescription = prompt("Please, edit description");
+    let newData = Object.assign(schedule);
+    newData.name = editName;
+    newData.description = editDescription;
+    dispatch(scheduleEdit(newData));
+  };
+
+  const deleteSchedule = id => {
+    dispatch(scheduleDelete(id))
+  };
+
   return (
     <div className="recipes__content-container">
       <div className="recipes__content__view">
         <div className="recipes__content__view-header">
-          <h1>list of recipes</h1>
+          <h1>list of schedules</h1>
           <Link to="/foodplan/schedules/add" className="icon-plus">
             <FontAwesomeIcon
               className="recipes-icon-plus"
@@ -39,7 +57,7 @@ const Schedules = () => {
 
             <th className="table__header__cell-actions">actions</th>
           </tr>
-          {schedules.map(schedule => (
+          {schedulesState.map(schedule => (
             <tr className="recipes__content__table-cell">
               <td>{schedule.id}</td>
               <td>{schedule.name}</td>
@@ -47,8 +65,8 @@ const Schedules = () => {
               <td>{schedule.weekNumber}</td>
 
               <td>
-                <FontAwesomeIcon className="icon-edit" icon={faEdit} />
-                <FontAwesomeIcon className="icon-delete" icon={faTrashAlt} />
+                <FontAwesomeIcon className="icon-edit" onClick={() => editSchedule(schedule)} icon={faEdit} />
+                <FontAwesomeIcon className="icon-delete" onClick={() => deleteSchedule(schedule.id)} icon={faTrashAlt}/>
               </td>
             </tr>
           ))}
