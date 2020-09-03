@@ -1,5 +1,15 @@
 # ScrumLab Food Planner React App
 
+<div align="center">
+  ![FoodPlanner](FoodPlanner.png)
+</div>
+
+### Technology stack
+
+- React.js
+- Redux
+- Sass
+- JSON-server
 ![FoodPlanner](FoodPlanner.png)
 
 # Technology stack:
