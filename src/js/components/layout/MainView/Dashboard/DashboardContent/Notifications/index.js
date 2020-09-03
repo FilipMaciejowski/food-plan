@@ -154,7 +154,7 @@ const Notifications = () => {
           </g>
         </svg>
         <div className="notification__element__text">
-          <p>It's great that you are here! Good planning and tasty! :)</p>
+          <p>It's great that you are here! Good planning! :)</p>
         </div>
         {renderExitButton("rgb(70, 137, 102)", 'message')}
       </>

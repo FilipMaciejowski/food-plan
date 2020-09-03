@@ -17,20 +17,20 @@ const UserFirstEntry = () => {
   return (
     <div className="dashboard__user__first__entry-container">
       <div className="dashboard__user__first-entry">
-        <h1>Witaj,</h1>
-        <p>wygląda na to że jesteś tutaj pierwszy raz!</p>
+        <h1>Hello!</h1>
+        <p>It seems you are here for the first time!</p>
         <form onSubmit={e => handleSubmit(e)}>
           <input
             value={name}
             onChange={e => setName(e.target.value)}
             type="text"
             name="user"
-            placeholder="tutaj wpisz jak masz na imię"
+            placeholder="your name"
           />
-          <button type="submit">Gotowe!</button>
+          <button type="submit">Done!</button>
         </form>
         <p>
-          Podaj nam swoje imię, a my zorganizujemy dla Ciebie naszą aplikację
+          Type your name and we will organize application for you!
           :&#41;
         </p>
       </div>

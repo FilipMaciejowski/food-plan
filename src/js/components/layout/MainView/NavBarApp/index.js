@@ -18,8 +18,8 @@ const NavBarApp = () => {
       <div className="navbar__dashboard-content">
         <Link to="/">
           <h1 className="navbar__title">
-            Zaplanuj
-            <span className="navbar__alttitle">Jedzonko</span>
+            Food
+            <span className="navbar__alttitle">Planner</span>
           </h1>
         </Link>
         <div className="avatar__container">

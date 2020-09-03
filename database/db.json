@@ -1,76 +1,7 @@
 {
   "user": {
-    "name": "MAri"
+    "name": "Filip"
   },
-  "recipes": [
-    {
-      "name": "rvvrv",
-      "description": "evvevevee",
-      "ingredients": {
-        "1": "evveveveve"
-      },
-      "steps": {
-        "1": "veveveveveve"
-      },
-      "close": false,
-      "id": 1
-    }
-  ],
-  "schedules": [
-    {
-      "name": "evevev ev ev ",
-      "description": "e ve vevvveevve",
-      "weekNumber": "14",
-      "monday": [
-        "rvvrv",
-        "rvvrv",
-        "rvvrv",
-        "rvvrv",
-        "rvvrv"
-      ],
-      "tuesday": [
-        "rvvrv",
-        "rvvrv",
-        "rvvrv",
-        "rvvrv",
-        "rvvrv"
-      ],
-      "wednesday": [
-        "rvvrv",
-        "rvvrv",
-        "rvvrv",
-        "rvvrv",
-        "rvvrv"
-      ],
-      "thursday": [
-        "rvvrv",
-        "rvvrv",
-        "rvvrv",
-        "rvvrv",
-        "rvvrv"
-      ],
-      "friday": [
-        "rvvrv",
-        "rvvrv",
-        "rvvrv",
-        "rvvrv",
-        "rvvrv"
-      ],
-      "saturday": [
-        "rvvrv",
-        "rvvrv",
-        "rvvrv",
-        "rvvrv",
-        "rvvrv"
-      ],
-      "sunday": [
-        "rvvrv",
-        "rvvrv",
-        "rvvrv",
-        "rvvrv",
-        "rvvrv"
-      ],
-      "id": 1
-    }
-  ]
+  "recipes": [],
+  "schedules": []
 }

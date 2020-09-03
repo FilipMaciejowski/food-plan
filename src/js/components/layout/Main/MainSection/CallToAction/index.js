@@ -13,7 +13,7 @@ const CallToAction = () =>{
           </p>
         </div>
         <Link className="button" to="/foodplan/dashboard">
-          Lorem ipsum
+          Start application!
         </Link>
       </div>
     </div>

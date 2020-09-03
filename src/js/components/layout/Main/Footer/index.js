@@ -113,7 +113,7 @@ const Footer = () => {
       <div className="footer__bottom">
         <p>
           <span className="copy">Copyright</span>
-          <span className="www">ZaplanujJedzonko.pl</span>
+          <span className="www">FoodPlanner.no</span>
         </p>
       </div>
     </>
