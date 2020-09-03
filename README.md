@@ -1,15 +1,8 @@
 # ScrumLab Food Planner React App
 
-<<<<<<< HEAD
-<div align="center">![FoodPlanner](FoodPlanner.png)<div>
-
-<div align="left">
-### Technology stack
-=======
- ![FoodPlanner](FoodPlanner.png) ![FoodPlanner](FoodPlanner2.png)
+ ![FoodPlanner](FoodPlanner.png) ![FoodPlanner] -(FoodPlanner2.png)
   
 # Technology stack:
->>>>>>> 5a911d196f973c73513c28e2235a4a2c26f81cfa
 
 - **JavaScript**
 - **React.js**
