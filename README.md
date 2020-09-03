@@ -1,4 +1,4 @@
-# SrumLab Food Planner React App
+# ScrumLab Food Planner React App
 
 ![FoodPlanner](FoodPlanner.png)
 
