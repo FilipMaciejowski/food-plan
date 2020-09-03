@@ -2,7 +2,7 @@
 
 ![FoodPlanner](FoodPlanner.png)
 
-### Technology stack
+# Technology stack:
 
 - **React.js**
 - **Redux**
