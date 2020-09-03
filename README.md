@@ -3,9 +3,10 @@
  <img width="45%" src=FoodPlanner.png> <img width="45%" src=FoodPlanner2.png>
 </div>
 
-# Desacription: 
+## Description: 
+A weekly food-planner app written in React.js. (under rebuild).
   
-# Technology stack:
+## Technology stack:
 
 - **JavaScript**
 - **React.js**
@@ -13,7 +14,7 @@
 - **Sass**
 - **JSON-server**
 
-# Features:
+## Features:
 
 Enables to:
 - add, delete and change recipies
