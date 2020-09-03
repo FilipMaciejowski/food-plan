@@ -11,7 +11,7 @@
 - **Sass**
 - **JSON-server**
 
-# Features 
+# Features:
 
 Enables to:
 - add, delete and change recipies
