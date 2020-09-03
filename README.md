@@ -10,10 +10,16 @@
 - **Sass**
 - **JSON-server**
 
-npm install / i
+```bash
+npm install 
+```
+
 Installs node_modules in your IDE
 
+```bash
 npm start
+```
+
 Runs the app in the development mode.
 Open http://localhost:3000 to view it in the browser.
 
