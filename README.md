@@ -1,7 +1,7 @@
 # ScrumLab Food Planner React App
 
 <div align="center">
-  ![FoodPlanner](FoodPlanner.png)
+  <img width="100" src="FoodPlanner.png"/>
 </div>
 
 # Technology stack:
