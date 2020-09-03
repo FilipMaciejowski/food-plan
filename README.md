@@ -1,6 +1,6 @@
 # ScrumLab Food Planner React App
 
- ![FoodPlanner](FoodPlanner.png) ![FoodPlanner] (FoodPlanner2.png)
+ ![FoodPlanner](FoodPlanner.png) ![FoodPlanner](FoodPlanner2.png)
   
 # Technology stack:
 
