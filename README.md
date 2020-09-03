@@ -1,4 +1,4 @@
-# SrumLab React App
+# SrumLab Food Planner React App
 
 ### Technology stack
 
