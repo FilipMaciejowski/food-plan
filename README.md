@@ -11,6 +11,13 @@
 - **Sass**
 - **JSON-server**
 
+# Features 
+
+Enables to:
+- add, delete and change recipies
+- add, delete and change schedules
+- create weekly food plan
+
 ```bash
 npm install 
 ```
