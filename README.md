@@ -4,8 +4,8 @@
 
 ### Technology stack
 
-- React.js
-- Redux
-- Sass
-- JSON-server
+- **React.js
+- **Redux
+- **Sass
+- **JSON-server
 
