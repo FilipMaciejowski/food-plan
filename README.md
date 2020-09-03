@@ -2,7 +2,7 @@
 
 <div align="center">
   ![FoodPlanner](FoodPlanner.png)
-</div>
+
 
 ### Technology stack
 
@@ -10,7 +10,7 @@
 - Redux
 - Sass
 - JSON-server
-![FoodPlanner](FoodPlanner.png)
+
 
 # Technology stack:
 
