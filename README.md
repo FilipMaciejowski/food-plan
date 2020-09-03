@@ -1,8 +1,7 @@
 # ScrumLab Food Planner React App
 
-  <img align="center" width="100%" src="FoodPlanner.png"/>
-<
-
+  <img align="center" width="50%" src="FoodPlanner.png"/>
+  
 # Technology stack:
 
 - **JavaScript**
