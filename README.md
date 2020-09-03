@@ -1,4 +1,4 @@
-# ScrumLab Food Planner React App
+# ScrumLab Food Planner React App 🗂 🥪 🥒
 <div align="center">
  <img width="45%" src=FoodPlanner.png> <img width="45%" src=FoodPlanner2.png>
 </div>
