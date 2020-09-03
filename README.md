@@ -4,6 +4,7 @@
 
 # Technology stack:
 
+- **JavaScript**
 - **React.js**
 - **Redux**
 - **Sass**
